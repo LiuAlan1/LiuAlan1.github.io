@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>THE TOMB</title>
+
+    <link href="css/gamestyle.css" rel="stylesheet">
+    <script src="js/quitbutton.js"></script>
+    <script src="js/dropdown.js"></script>
+  </head>
+
+  <body>
+
+  	<!--QUIT BUTTON-->
+	<div class="quit">
+	  <li>
+		<button onclick="quitButton();">QUIT</button>
+	  </li>
+	</div>
+
+  	<main id="center">
+  		<div>
+			<h1>
+				THE FIRST ROOM
+			</h1>
+		</div>
+
+		<div class="gradient">
+			<div id="smallcenter">
+				<p>You decided to explore the room you are in.</p>
+			</div>
+		</div>
+
+		<br>
+
+		<!--CONTAINER FOR DROPDOWN-->
+		<div class="dropdown">
+			<!--OPTION 1-->
+			<button onclick="dropDown1()" class="dropbtn">West Door</button>
+			<div id="dropdown1" class="dropdown-content">
+
+			 	<p>A door. There is a doorplate on it.</p>
+			  	<p>A - T = ?</p>
+			  	<p>There is a keypad next to it. It seemed to take <i>a single letter.</i></p>
+
+				<a class="dropdown-progress" href="puzzleroomstartwestdoor.html">ATTEMPT TO SOLVE</a>
+
+			</div>
+			<!--OPTION 2-->
+			<button onclick="dropDown2()" class="dropbtn">North Door</button>
+			<div id="dropdown2" class="dropdown-content">
+			 	<p>A door. On the side of the door, there is an etching that says <i>A & D & E & H & T are all 1 - 5 and each are unique.</i> There is a doorplate on it.</p>
+			  	<p>H + E - A + D = ?</p>
+			  	<p>There is a keypad next to it. It seemed to take <i>a single letter.</i></p>
+
+				<a class="dropdown-progress" href="puzzleroomstartnorthdoor.html">ATTEMPT TO SOLVE</a>
+			</div>
+			<!--OPTION 3-->
+			<button onclick="dropDown3()" class="dropbtn">East Door</button>
+			<div id="dropdown3" class="dropdown-content">
+
+			 	<p>A door. There is a doorplate on it.</p>
+			  	<p>D + E – A + T – H = ?</p>
+			  	<p>There is a keypad next to it. It seemed to take <i>a single letter.</i></p>
+
+				<a class="dropdown-progress" href="puzzleroomstarteastdoor.html">ATTEMPT TO SOLVE</a>
+
+			</div>
+			<!--OPTION 4-->
+			<button onclick="dropDown4()" class="dropbtn">Desk</button>
+			<div id="dropdown4" class="dropdown-content">
+
+			 	<p>There is nothing on the desk itself.</p>
+
+				<div class="dropdown">
+					<button onclick="dropDown5()" class="dropbtn">Under the Desk</button>
+					<div id="dropdown5" class="dropdown-content">
+
+					 	<p>Other than gum, there is nothing under the desk.</p>
+					 	<p>An etching was spotted near the corner.</p>
+					 	<p><i>E < H</i></p>
+
+					</div>
+				</div>
+			</div>
+			<!--OPTION 5-->
+			<button onclick="dropDown6()" class="dropbtn">Bookshelf</button>
+			<div id="dropdown6" class="dropdown-content">
+
+			 	<p>Some of the books on the shelf were very dusty. There is a binder which is very clean for some reason.</p>
+			 	<p>The spine of the binder reads: <i>H = 2</i></p>
+
+				<div class="dropdown">
+					<button onclick="dropDown7()" class="dropbtn">Read the Binder</button>
+					<div id="dropdown7" class="dropdown-content">
+
+					 	<p>There is only one page in the binder.</p>
+					 	<i>
+					 		<p>Subject 132</p>
+					 		<p>Observations:</p>
+					 		<p>Poor judgement, unable to act in fear.</p>
+					 		<p>Results:</p>
+					 		<p>Released with compensation.</p>
+					 		<p>D > A</p>
+					 	</i>
+					 	<p>The rest is jargon you can't seem to understand.</p>
+
+					</div>
+				</div>
+			</div>
+			<!--OPTION 6-->
+			<button onclick="dropDown8()" class="dropbtn">Window</button>
+			<div id="dropdown8" class="dropdown-content">
+
+			 	<p>The window is barred.</p>
+
+				<div class="dropdown">
+					<button onclick="dropDown9()" class="dropbtn">Look Outside</button>
+					<div id="dropdown9" class="dropdown-content">
+
+					 	<p>You can't seem to get your surroundings as it was seemingly nighttime.</p>
+
+					</div>
+				</div>
+			</div>
+			<!--OPTION 7-->
+			<button onclick="dropDown10()" class="dropbtn">Trashcan</button>
+			<div id="dropdown10" class="dropdown-content">
+
+			 	<p>A single crumpled up wad of paper is found inside.</p>
+
+				<div class="dropdown">
+					<button onclick="dropDown11()" class="dropbtn">Read Paper</button>
+					<div id="dropdown11" class="dropdown-content">
+
+					 	<p>"T is higher than A by 1."</p>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+  		
+  	</main>
+  </body>
+</html>

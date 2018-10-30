@@ -1,0 +1,109 @@
+body {
+	font-family: garamond;
+}
+
+main {
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	padding: 40px 0px;
+	width: 100%;
+	font-size: 20px;
+}
+
+h1 {
+	padding: 50px;
+}
+
+div {
+    align-content: center;
+}
+
+img {
+	max-width:100%;
+	max-height:100%;
+}
+
+.blackbg {
+    background-color: black;
+}
+
+.buildingbg {
+    background: url(../images/bg.jpg);
+}
+
+#left {
+	float: left;
+	background-image: radial-gradient( rgba(0,0,0,1), rgba(0,0,0,0.5), rgba(0,0,0,0), rgba(0,0,0,0));
+	width: 35%;
+	padding-left: 90px;
+}
+
+#center {
+	width: 100%;
+}
+
+#right {
+	float: right;
+	padding-right: 90px;
+	background-image: radial-gradient( rgba(0,0,0,1), rgba(0,0,0,0.1), rgba(0,0,0,0));
+	width: 35%;
+}
+
+#about {
+    width: 100%;
+}
+
+#play {
+	position: relative;
+	bottom: -300px;
+	right: 0px;
+}
+
+.gradient {
+	background-image: radial-gradient( rgba(255,255,255,1), rgba(233,233,233,0.75), rgba(211,211,211,0.5), rgba(199,199,199,0), rgba(0,0,0,0));
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+}
+
+/* nav bar start */
+.topnav {
+    display: inline-block;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444444;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.topnav a {
+    display: block;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: grey;
+    color: white;
+}
+
+/** nav bar end**/
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>THE TOMB</title>
+
+    <link href="css/gamestyle.css" rel="stylesheet">
+    <script src="js/quitbutton.js"></script>
+    <script src="js/dropdown.js"></script>
+
+  </head>
+
+  <body>
+
+  	<!--QUIT BUTTON-->
+	<div class="quit">
+	  <li>
+		<button onclick="quitButton();">QUIT</button>
+	  </li>
+	</div>
+
+  	<main>
+  		<div id="center">
+			<h1>
+				HALLWAY - EAST CORRIDOR
+			</h1>
+		</div>
+
+		<div class="largegradient">
+			<div id="smallcenter">
+				<p>
+					As you inputted the answer into the keypad, the set of doors automatically open.
+				</p>
+				<p>
+					"Wait up! I was checking something out. Now I'm ready to go."
+				</p>
+				<p>
+					Exiting the room, another hallway spans and the door behind you closes and an audible lock sounds.
+				</p>
+		  	</div>
+		</div>
+
+		<div class="dropdown">
+			<button onclick="dropDown1()" class="dropbtn">Walk forward</button>
+			<div id="dropdown1" class="dropdown-content">
+		  		<p>
+		  			As you walked through the hall, you encounter a fork in the road, with one being locked behind a shutter. There is a card scanner next to it.
+		  		</p>
+		  		<p>
+		  			"Hey, you think... This would work? I pulled this out with force."
+		  		</p>
+		  		<p>
+		  			The man revealed a keycard familiar to you.
+		  		</p>
+		  		<p>
+		  			"Since this has admin permissions, I thought it might be useful. Maybe... we can confront whoever is behind this, don't you think?"
+		  		</p>
+				<button onclick="dropDown2()" class="dropbtn">Use the card</button>
+				<div id="dropdown2" class="dropdown-content">
+			  		<p>
+			  			"Ok, let me see if this works..."
+			  		</p>
+			  		<p>
+			  			The man, with the keycard in his hand, swiped it through the reader.
+			  		</p>
+			  		<p>
+			  			The reader beeps and the shutter lifts itself. A set of stairs leading upwards was revealed.
+			  		</p>
+			  		<p>
+			  			"Are you ready?"
+			  		</p>
+					<a class="dropbtn" href="hallwayupperfloor.html">Proceed</a>
+		  </div>
+
+			
+		</div>
+  		
+  	</main>
+  </body>
+</html>

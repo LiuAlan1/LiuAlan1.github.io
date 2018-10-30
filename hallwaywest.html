@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>THE TOMB</title>
+
+    <link href="css/gamestyle.css" rel="stylesheet">
+    <script src="js/quitbutton.js"></script>
+    <script src="js/dropdown.js"></script>
+
+  </head>
+
+  <body>
+
+  	<!--QUIT BUTTON-->
+	<div class="quit">
+	  <li>
+		<button onclick="quitButton();">QUIT</button>
+	  </li>
+	</div>
+
+  	<main>
+  		<div id="center">
+			<h1>
+				HALLWAY - WEST
+			</h1>
+		</div>
+
+		<div class="largegradient">
+			<div id="smallcenter">
+				<p>
+					As you inputted the answer into the keypad, the door clicks open and you open the door with ease.
+				</p>
+				<p>
+					Exiting the room, you are greeted with white hallways that seemed to span endlessly. The door locks behind you as soon as you step out.
+				</p>
+			  	<p>
+			  		Moving forward, there is nothing attention worthy as you walk forward. You seem to hear something as you seemed to approach a branching corridor.
+			  	</p>
+		  	</div>
+		</div>
+
+		<div class="dropdown">
+			<button onclick="dropDown1()" class="dropbtn">Look around the corner</button>
+			<div id="dropdown1" class="dropdown-content">
+		  		<p>
+		  			Looking around the corner, there is a man, who seems to be mid-adult age, who is reading a sheet of paper. Wearing a brown coat and having He notices your presence and approaches you.
+		  		</p>
+		  		<p>
+		  			"So you finally escaped, huh? I was getting tired of waiting." The man said, annoyingly.
+		  		</p>
+				<button onclick="dropDown2()" class="dropbtn">"What do you mean?"</button>
+				<button onclick="dropDown2()" class="dropbtn">Stare in confusion</button>
+				<div id="dropdown2" class="dropdown-content">
+					<p>
+						"So you don't know? Well, fine. Just help me out here. Down this hallway is the room to escape this wretched building. I already escaped from multiple rooms to get here, but the requirements to enter any room is to press two buttons simultaneously. But they are too far apart for one person to press. So come with me."
+					</p>
+					<button onclick="dropDown3()" class="dropbtn">Follow the man</button>
+					<div id="dropdown3" class="dropdown-content">
+						<p>
+							Walking down the hall, following the man, you see a large double door. On each side is a red button.
+						</p>
+						<p>
+							"Go to that side. I'll handle the other." The man moved towards the right side while you reluctantly moved to the left.
+						</p>
+						<p>"On three... one... two..."</p>
+						<a class="dropbtn" href="puzzleroomwest1.html">THREE!</a>
+					</div>
+				</div>
+		  	</div>
+
+			
+		</div>
+  		
+  	</main>
+  </body>
+</html>
