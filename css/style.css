@@ -28,8 +28,13 @@ img {
     background-color: black;
 }
 
-.buildingbg {
-    background: url(../images/bg.jpg);
+.cytoidchan {
+    z-index: 100;
+    width: 100%;
+    background-image: url(../img/background.png);
+    margin: 0 auto;
+    position: relative;
+    background-repeat: no-repeat;
 }
 
 #left {
