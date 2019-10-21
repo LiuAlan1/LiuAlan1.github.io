@@ -1,4 +1,11 @@
-@font-face { font-family: Valken; src: url('Valken.ttf'); } 
+@font-face {
+    font-family: Valken;
+    src: url('Valken.ttf'); 
+    src: url('valken-webfont.woff2') format('woff2'),
+         url('valken-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} 
 
 body {
 	font-family: Valken;
