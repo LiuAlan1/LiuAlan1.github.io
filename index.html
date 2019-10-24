@@ -7,34 +7,45 @@
     <title>GACHA</title>
 
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/gachaInit.js"></script>
 
   </head>
 
   <body class="bgcolor">
-    <main>
-      <div id="center">
+    <div class="topicon">
+      <a href="about.html"><img src="images/about.png"></a>
+    </div>
+
+
+  	<main>
+  		<div id="center" class="intro">
+  			<h1>
+  				GACHA UPDATE
+  			</h1>
+          <h3>
+            BRAND NEW EGGS!
+
+          </h3>
         <p>
-          This is a simple directory to my progress throughout Project 2 of DES525. In the future, this site may change to something different. Press a button to go to the version of the site that was uploaded on the specified date.
+          Get the new <span class="URtext">[UR] Golden Egg</span> at 2x the rate! Other new eggs include the <span class="SRtext">[SR] Angry Egg</span> and <span class="Rtext">[R] Cowboy Egg</span> at increased rates as well!
+  			</p>
+
+        <p>
+          Rarity is represented in order from rarest to most common:<br>
+
+          <span class="URtext">Ultra Rare [UR]</span><br>
+          <span class="SRtext">Super Rare [SR]</span><br>
+          <span class="Rtext">Rare [R]</span><br>
+          <span>Common [C]</span>
         </p>
 
-      	<div class="buttons">
-    	    <button onclick="window.location.href = 'ver1/index.html';">Ver 1 (Oct 9)</button>
-          <br>
-          <br>
-          <button onclick="window.location.href = 'ver2/index.html';">Ver 2 (Oct 14)</button>
-          <br>
-          <br>
-          <button onclick="window.location.href = 'ver3/index.html';">Ver 3 (Oct 16)</button>
-          <br>
-          <br>
-          <button onclick="window.location.href = 'ver4/index.html';">Ver 4 (Oct 21)</button>
-          <br>
-          <br>
-          <button onclick="window.location.href = 'ver5/index.html';">Ver 5 (Oct 23)</button>
-          <br>
-          <br>
-          <button onclick="window.location.href = 'changelog.html';">Changelog</button>
-        </div>
+        <p>Note: This website works best on Chrome or Firefox with 100% zoom or on mobile browsers.</p>
+		  </div>
+  		
+    </main>
+    <main>
+      <div id="start">
+        <a href="draw.html"><img src="images/start.png" class="spaced starticon" onclick="setGacha()"></a>
       </div>
     </main>
   </body>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>GACHA</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/gachaResult.js"></script>
+
+  </head>
+
+  <body class="bgcolor">
+    <div class="topicon">
+      <a href="draw.html"><img src="images/back.png"></a>
+    </div>
+
+  	<main class="gachaResultSpace">
+  		<div class="resultText">
+  			<h1 style="color:yellow">
+  				RESULTS
+  			</h1>
+        <p class="gachaResultText">
+          <script type="text/javascript">
+            document.write(cumulativeDraws());
+          </script>
+        </p>
+      </div>
+      <div>
+        <p>
+          <script type="text/javascript">
+            document.write(printDraws());
+          </script>
+        </p>
+		  </div>
+  		
+  	</main>
+  </body>
+</html>
