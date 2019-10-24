@@ -41,7 +41,7 @@ img {
 
 #left {
 	float: left;
-    width: 50%;
+    width: 70%;
 }
 
 #center {
@@ -51,7 +51,7 @@ img {
 
 #right {
 	float: right;
-    width: 50%;
+    width: 30%;
     text-align: right;
 }
 

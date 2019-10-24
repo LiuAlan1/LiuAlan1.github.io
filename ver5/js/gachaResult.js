@@ -43,9 +43,9 @@ function cumulativeDraws() {
 		text += '<br><br>';
 		text += drawProbabilityFact;
 	}
-	if (drawCount >= 500){
+	if (drawCount >= 300){
 		text += '<br><br> Click <a href="drawlist.html">here</a> for a list of possible eggs that you can draw from this gacha, <span class="highlight">plus their rates</span>.';
-	} else if (drawCount >= 300) {
+	} else if (drawCount >= 200) {
 		text += '<br><br> Click <a href="drawlist.html">here</a> for a list of possible eggs that you can draw from this gacha.';
 	}
 	text += '<br>';

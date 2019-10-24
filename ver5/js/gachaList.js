@@ -29,7 +29,12 @@ function writePercent() {
 		text += '5.8409%<br>';
 		text += '5.8409%<br>';
 		text += '5.8409%<br>';
-		text += '*rates are rounded to the ten thousandth.';
 		return text;
+	}
+}
+
+function writeRoundWarning() {
+	if (drawCount >= 500) {
+		return '*rates are rounded to the ten thousandth.';
 	}
 }
