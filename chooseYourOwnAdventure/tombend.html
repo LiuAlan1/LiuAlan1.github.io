@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>THE TOMB</title>
+
+    <link href="css/gamestyle.css" rel="stylesheet">
+    <script src="js/quitButton.js"></script>
+    <script src="js/dropdown.js"></script>
+
+  </head>
+
+  <body id="escaped">
+
+    <!--QUIT BUTTON-->
+  <div class="quit">
+    <li>
+    <button onclick="quitButton();">QUIT</button>
+    </li>
+  </div>
+  
+  	<main>
+
+  		<div class="gradient">
+        <p>You wake up on a stretcher.</p>
+        <p>Many people, who look to be officers and doctors, surrounded everywhere.</p>
+        <p>An officer approached you and shouted out to the others that you regained consciousness.</p>
+      </div>
+      <div class="dropdown">
+        <button onclick="dropDown1()" class="dropbtn">"What happened?"</button>
+        <div id="dropdown1" class="dropdown-content">
+
+          <p>"Are you ok? We found you laying on the ground. You were shot near your liver."</p>
+
+          <button onclick="dropDown2()" class="dropbtn">"I was..."</button>
+          <div id="dropdown2" class="dropdown-content">
+
+            <p>"Don't worry. After we get you to the hospital, we'll ask you for your statement. Pherme has been arrested."</p>
+
+            <button onclick="dropDown3()" class="dropbtn">"Pherme?"</button>
+            <div id="dropdown3" class="dropdown-content">
+
+              <p>"The guy who took over WORLDBLOWER and kidnapped all of you. Some of his kidnapees escaped and called 911."</p>
+              <p>Another officer yelled for the officer who was talking to you.</p>
+              <p>"Ok, I'll ask you more later. Get well."</p>
+
+              <h2>END</h2>
+
+          </div>
+        </div>
+      
+	    </div>
+  		
+  	</main>
+  </body>
+</html>

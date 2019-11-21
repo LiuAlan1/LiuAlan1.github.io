@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>THE TOMB</title>
+
+    <link href="css/gamestyle.css" rel="stylesheet">
+    <script src="js/quitbutton.js"></script>
+    <script src="js/dropdown.js"></script>
+
+  </head>
+
+  <body>
+
+  	<!--QUIT BUTTON-->
+	<div class="quit">
+	  <li>
+		<button onclick="quitButton();">QUIT</button>
+	  </li>
+	</div>
+
+  	<main>
+  		<div id="center">
+			<h1>
+				HALLWAY - WEST CORRIDOR
+			</h1>
+		</div>
+
+		<div class="largegradient">
+			<div id="smallcenter">
+				<p>
+					As you inputted the answer into the keypad, the set of doors automatically open,
+				</p>
+				<p>
+					Exiting the room, another hallway spans and the door behind you closes and an audible lock sounds.
+				</p>
+		  	</div>
+		</div>
+
+		<div class="dropdown">
+			<button onclick="dropDown1()" class="dropbtn">Walk forward</button>
+			<div id="dropdown1" class="dropdown-content">
+		  		<p>
+		  			As you walked through the hall, you encounter a fork in the road, with one being locked behind a shutter. There is a card scanner next to it.
+		  		</p>
+		  		<p>
+		  			"That man who wrote that note... he knew about this door... But he didn't give a single hint of how to open this damned thing!!"
+		  		</p>
+		  		<p>
+		  			The man started to laugh in despair.
+		  		</p>
+				<button onclick="dropDown2()" class="dropbtn">"Are you ok?"</button>
+				<div id="dropdown2" class="dropdown-content">
+					<p>
+						"It's useless. If we keep going forward, they'll lock us out... it's completely useless!"
+					</p>
+					<p>
+						"Even if I don't remember anything, the note writer knew... he might have remembered everything. And if you didn't catch it, if we keep going forward, we'll die AFTER we escape. We can't... even live after we gone through this shit."
+					</p>
+					<p>
+						The man stood up and dug in his pockets.
+					</p>
+					<button onclick="dropDown3()" class="dropbtn">...</button>
+					<div id="dropdown3" class="dropdown-content">
+						<p>
+							The man faces you and points a small gun at you. A twisted look is on his face.
+						</p>
+						<p>
+							"So, let's make this easy for the both of us. There's no point going forward, right? We're... trapped. Even through these puzzles, I had already lost someone I met here. He had hoped to escape, but I was scared that I would meet the same fate..."
+						</p>
+						<p>
+							"Yes, now... the real escape isn't what's here... it's Hell we should escape into!"
+						</p>
+
+						<a class="dropbtn" href="puzzleroomwestend.html">STOP HIM!</a>
+						<a class="dropbtn" href="puzzleroomwestend.html">TALK HIM OUT OF IT!</a>
+		  </div>
+
+			
+		</div>
+  		
+  	</main>
+  </body>
+</html>

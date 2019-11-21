@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>THE TOMB</title>
+
+    <link href="css/gamestyle.css" rel="stylesheet">
+    <script src="js/quitbutton.js"></script>
+    <script src="js/dropdown.js"></script>
+
+  </head>
+
+  <body>
+
+  	<!--QUIT BUTTON-->
+	<div class="quit">
+	  <li>
+		<button onclick="quitButton();">QUIT</button>
+	  </li>
+	</div>
+	
+  	<main id="center">
+  		<div>
+			<h1>
+				THE CONTROL CENTER
+			</h1>
+		</div>
+
+		<div class="gradient">
+			<div id="smallcenter">
+				<p>As you enter the room, you meet with an array of monitors, showing feeds of hallways and rooms.</p>
+				<p>You hear a gunshot behind you. Looking backwards, you see the man being dragged off before the doors behind you are closed. You hear a voice.</p>
+				<p>"Fool, that's what you get for being rebellious. And as for you in the room. If you can escape from this room, then I'll meet with you. The key to this door is in a safe... if you can get past it."</p>
+				<p>The monitors flickered for a brief moment, showing you various equations and letters.</p>
+			</div>
+		</div>
+
+		<br>
+
+		<!--CONTAINER FOR DROPDOWN-->
+		<div class="dropdown">
+			<!--OPTION 1-->
+			<button onclick="dropDown1()" class="dropbtn">Safe</button>
+			<div id="dropdown1" class="dropdown-content">
+				<p>A safe, labeled "@BYE" is beneath the set of monitors. A pinpad keeps it locked. <i>You don't know how many digits it would take.</i></p>
+				<a class="dropdown-progress" href="puzzleroomcontrolpuzzle.html">ATTEMPT TO SOLVE</a>
+			</div>
+			<!--OPTION 2-->
+			<button onclick="dropDown2()" class="dropbtn">Monitor 001</button>
+			<div id="dropdown2" class="dropdown-content">
+				<p>@112 = 0</p>
+			</div>
+			<!--OPTION 3-->
+			<button onclick="dropDown3()" class="dropbtn">Monitor 002</button>
+			<div id="dropdown3" class="dropdown-content">
+				<p>@5271 + 4 = Y</p>
+			</div>
+			<!--OPTION 4-->
+			<button onclick="dropDown4()" class="dropbtn">Monitor 003</button>
+			<div id="dropdown4" class="dropdown-content">
+				<p>@SB = 0</p>
+			</div>
+			<!--OPTION 5-->
+			<button onclick="dropDown5()" class="dropbtn">Monitor 004</button>
+			<div id="dropdown5" class="dropdown-content">
+				<p>@97979 = 4, but @4 = 0</p>
+			</div>
+			<!--OPTION 6-->
+			<button onclick="dropDown6()" class="dropbtn">Monitor 005</button>
+			<div id="dropdown6" class="dropdown-content">
+				<p>SX = 39</p>
+			</div>
+			<!--OPTION 7-->
+			<button onclick="dropDown7()" class="dropbtn">Monitor 006</button>
+			<div id="dropdown7" class="dropdown-content">
+				<p>@8619 - @452 = Y</p>
+			</div>
+			<!--OPTION 8-->
+			<button onclick="dropDown8()" class="dropbtn">Monitor 007</button>
+			<div id="dropdown8" class="dropdown-content">
+				<p>S = 3</p>
+			</div>
+			<!--OPTION 9-->
+			<button onclick="dropDown9()" class="dropbtn">Monitor 008</button>
+			<div id="dropdown9" class="dropdown-content">
+				<p>E / 3 = @587</p>
+			</div>
+			<!--OPTION 10-->
+			<button onclick="dropDown10()" class="dropbtn">Monitor 009</button>
+			<div id="dropdown10" class="dropdown-content">
+				<p>@835 = @466</p>
+			</div>
+			<!--OPTION 11-->
+			<button onclick="dropDown11()" class="dropbtn">Monitor 010</button>
+			<div id="dropdown11" class="dropdown-content">
+				<p>3^2 = X</p>
+			</div>
+			<!--OPTION 12-->
+			<button onclick="dropDown12()" class="dropbtn">Monitor 011</button>
+			<div id="dropdown12" class="dropdown-content">
+				<p>B + 1 = @767</p>
+			</div>
+			<!--OPTION 13-->
+			<button onclick="dropDown13()" class="dropbtn">Monitor 012</button>
+			<div id="dropdown13" class="dropdown-content">
+				<p>Merge the @</p>
+			</div>
+		</div>
+  		
+  	</main>
+  </body>
+</html>

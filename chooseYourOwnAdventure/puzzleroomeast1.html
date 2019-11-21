@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>THE TOMB</title>
+
+    <link href="css/gamestyle.css" rel="stylesheet">
+    <script src="js/quitbutton.js"></script>
+    <script src="js/dropdown.js"></script>
+
+  </head>
+
+  <body>
+
+  	<!--QUIT BUTTON-->
+	<div class="quit">
+	  <li>
+		<button onclick="quitButton();">QUIT</button>
+	  </li>
+	</div>
+	
+  	<main id="center">
+  		<div>
+			<h1>
+				THE LAB
+			</h1>
+		</div>
+
+		<div class="gradient">
+			<div id="smallcenter">
+				<p>Entering the room, you see a bed, a long table, and other stuff that cements the idea that this room is a laboratory.</p>
+				<p>"The doors behind us... closed... I can't open them. Is... there another way out in this room?"</p>
+			</div>
+		</div>
+
+		<br>
+
+		<!--CONTAINER FOR DROPDOWN-->
+		<div class="dropdown">
+			<!--OPTION 1-->
+			<button onclick="dropDown1()" class="dropbtn">Doors</button>
+			<div id="dropdown1" class="dropdown-content">
+				<p>There are another set of double doors. A sign on them reads: <b>Punch out with your key to properly exit the lab.</b></p>
+				<p>Looking at the lock on the door, there is a pinpad that <i>takes 8 numbers.</i></p>
+				<p>"Punch out with your key... but the door takes a password? What's up with that?"</p>
+				<a class="dropdown-progress" href="puzzleroomeast1puzzle.html">ATTEMPT TO SOLVE</a>
+
+			</div>
+			<!--OPTION 2-->
+			<button onclick="dropDown2()" class="dropbtn">Bed</button>
+			<div id="dropdown2" class="dropdown-content">
+				<p>The bed is well fixed as if no one slept on it.</p>
+				<button onclick="dropDown3()" class="dropbtn">Under the covers</button>
+				<div id="dropdown3" class="dropdown-content">
+					<p>An ID is found glued on the mattress. Although the name and image is cut out, the ID number seems to be freshly printed on it.</p>
+					<p><b>NO. 70001352</b></p>
+					<p>"An ID? Was this someone's before we got here? Wait... then it wouldn't be glued at all."</p>
+				</div>
+			</div>
+			<!--OPTION 3-->
+			<button onclick="dropDown4()" class="dropbtn">Table</button>
+			<div id="dropdown4" class="dropdown-content">
+				<p>The table contained a tray of medical tools, a clipboard, and a binder. Alongside was a cut ID that only showed half the ID number on it.</p>
+				<p><b>0124</b></p>
+				<button onclick="dropDown5()" class="dropbtn">Check the tools</button>
+				<div id="dropdown5" class="dropdown-content">
+					<p>Nothing caught your eyes, as well as the man's eyes, as suspicious or relevant.</p>
+				</div>
+				<button onclick="dropDown6()" class="dropbtn">Clipboard</button>
+				<div id="dropdown6" class="dropdown-content">
+					<p>A list of ID numbers.</p>
+					<i>
+						<p>IDs given for Research Station |sorted by date|</p>
+						<p>
+							70001121
+							<br>70001183
+							<br>70001241
+							<br>70001269
+							<br>70001352
+							<br>70001353
+							<br>70001507
+							<br>70001514
+							<br>70001597
+							<br>70001685
+							<br>70001811
+						</p>
+					</i>
+				</div>
+				<button onclick="dropDown7()" class="dropbtn">Binder</button>
+				<div id="dropdown7" class="dropdown-content">
+					<p>There was only one page in the binder.</p>
+					<i>
+						<p>Subject 14</p>
+					 	<p>Observations:</p>
+					 	<p>Calculated, but towards the end seemed to operate almost on a robotic behavior, as if it was a game to subject.</p>
+					 	<p>Results:</p>
+					 	<p>Proceed to second phase. Given ID of 70001183.</p>
+					</i>
+					<p>"Second phase? What's that mean?"</p>
+				</div>
+			</div>
+			<!--OPTION 4-->
+			<button onclick="dropDown8()" class="dropbtn">Medical Station</button>
+			<div id="dropdown8" class="dropdown-content">
+				<p>A journal was the only thing on the station.</p>
+				<button onclick="dropDown9()" class="dropbtn">Read journal</button>
+				<div id="dropdown9" class="dropdown-content">
+					<p>There is no date on this journal page.</p>
+					<p><i>Our experiments have been progressing, but not at a fast pace because the first subject keeps losing his ID. We have been issuing new IDs but it's like he's losing them on purpose. We even reissued two IDs at one point, and clipped any of his old IDs we can find since they are no longer valid. That is why I'm installing a new lock so that if this person loses his ID once again, he no longer can enter or exit this lab. We have one more subject coming for a total of three so I'm going to get this straight with any new subjects.</i></p>
+				</div>
+			</div>
+			<!--OPTION 5-->
+			<button onclick="dropDown10()" class="dropbtn">Cabinet</button>
+			<div id="dropdown10" class="dropdown-content">
+				<p>It's locked, but you can see various medicines and other chemicals.</p>
+				<p>You spotted something that looks like a card. You can only make out the number "14" out of it</p>
+			</div>
+			<!--OPTION 6-->
+			<button onclick="dropDown11()" class="dropbtn">Mobile Cart</button>
+			<div id="dropdown11" class="dropdown-content">
+				<p>A laptop is on the cart. Seems like something else was on here before it was ripped off.</p>
+				<button onclick="dropDown12()" class="dropbtn">Check laptop</button>
+				<div id="dropdown12" class="dropdown-content">
+					<p>You powered on the PC.</p>
+					<p>The screen is frozen but you see the following:</p>
+					<i>
+						<p>to: psych.d@worldblower.net</p>
+					 	<p>from: admin@worldblower.net</p>
+					 	<p>subject: New ID for new Subject</p>
+					 	<p>Here is the ID for your fifth subject.</p>
+					 	<p>70001685</p>
+					</i>
+				</div>
+			</div>
+			<!--OPTION 7-->
+			<button onclick="dropDown13()" class="dropbtn">Monitor</button>
+			<div id="dropdown13" class="dropdown-content">
+				<p>A gigantic monitor mounted on a wall. A card is inserted, but stuck into a slot connecting to the monitor. It looks like it can be powered on.</p>
+				<button onclick="dropDown14()" class="dropbtn">Power monitor</button>
+				<div id="dropdown14" class="dropdown-content">
+					<p>A picture of what seems to be an X-ray of a person's brain. On the bottom right, there is a label that says: "USER 70001811 LOGGED IN. HELLO, Admin."</p>
+					<p>"Admin? Did he make an ID for himself?"</p>
+				</div>
+			</div>
+		</div>
+  		
+  	</main>
+  </body>
+</html>
