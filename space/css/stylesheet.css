@@ -99,6 +99,16 @@ hr {
 	height:600px;
 }
 
+.gmap_canvas {
+	position: relative;
+	right: 1.25%;
+	bottom: 50%;
+	overflow:hidden;
+	background:none!important;
+	width:100.5%;
+	height:600px;
+}
+
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 1000px) and (orientation: portrait) {
@@ -119,4 +129,21 @@ hr {
 	}
 
 
+
+	.images {
+	  	margin: auto;
+	  	width: 100%;
+	}
+
+	.bannerimage {
+		width: 100%;
+	}
+
+	.bigimage {
+		width: 49%;
+	}
+
+	.smallimage {
+		width: 24%;
+	}
 }
