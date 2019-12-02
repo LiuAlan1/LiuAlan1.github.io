@@ -5,8 +5,8 @@ body {
 	*/
 
 	background-color:#4EB67A;
-	color: white;
-	font-family: houschka-rounded, sans-serif;
+	color: black;
+	font-family: nudista-web, sans-serif;
 	font-style: normal;
   	width: 100%;
     height: 100%;
@@ -32,7 +32,7 @@ iframe {
 }
 
 .smallimage {
-	width: 24.725%;
+	width: 24.7%;
 }
 
 hr {
@@ -41,16 +41,16 @@ hr {
 	background-color: white;
 	width: 96.5%;
 	position: relative;
-	top: 61px;
+	top: 78px;
 	border-radius: 10px 10px 10px 10px;
 }
 
 .pageName {
 	position: relative;
-	width: 400px;
+	width: 800px;
     border-radius: 20px;
 	margin: 0 auto;
-	font-size: 35px;
+	font-size: 48px;
 	text-align: center;
 	background-color: white;
 	color: #450001;
@@ -99,15 +99,65 @@ hr {
 	height:600px;
 }
 
-.gmap_canvas {
-	position: relative;
-	right: 1.25%;
-	bottom: 50%;
-	overflow:hidden;
-	background:none!important;
-	width:100.5%;
-	height:600px;
+
+/*NAVIGATION BAR*/
+
+.navbar {
+    display: inline-block;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: absolute;
+    width: 102%;
+    left: -20px;
+    height: 80px;
+    z-index: 100;
+    box-shadow:10px 10px 70px grey;
 }
+
+
+.navbar a {
+    display: block;
+    float: right;
+    color: #996017;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    text-decoration: none;
+	font-weight: 600;
+    font-size: 36px;
+}
+
+.navbar .siteName {
+	float: left;
+    left: 30px;
+    bottom: 7px;
+    font-weight: 450;
+    font-size: 45px; 
+}
+
+.storeName a:hover {
+    cursor: pointer;
+}
+
+
+.navbar a.option:hover {
+    cursor: pointer;
+    background-color: #996017;
+    color: white;
+}
+
+
+.navbar .icon {
+	display: none;
+}
+
+
+.navbar .hidden {
+	display: none;
+}
+
+
 
 /*MEDIA QUERIES*/
 
@@ -119,13 +169,11 @@ hr {
 
 	.pageName {
 	position: relative;
-	width: 400px;
     border-radius: 20px;
 	margin: 0 auto;
-	font-size: 35px;
 	text-align: center;
 	background-color: white;
-	color: #450001;	
+	color: #443731;	
 	}
 
 
@@ -144,6 +192,72 @@ hr {
 	}
 
 	.smallimage {
-		width: 24%;
+		width: 23.9%;
+	}
+
+	.gmap_canvas {
+		width:103.5%;
+	}
+
+
+	.navbar {
+    	width: 100%;
+	    position: absolute;
+	    top: 0px;
+	    left: 0px;
+	}
+
+	.navbar a {
+		display: none;
+	}
+
+	.navbar a.icon {
+		float: left;
+		display: block;
+    	font-size: 48px;
+	    top: -10px;
+	}
+
+	.navbar a.navHome {
+		display: none;
+	}
+
+	.text {
+		width: 95%;
+		position: relative;
+		font-size: 30px;
+	}
+
+}
+
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+
+	.navbar.responsive {
+		position: absolute;
+    	height: 23%;
+    	width: 100%;
+	}
+	.navbar.responsive.icon {
+		position: absolute;
+		right: 0px;
+    	font-size: 48px;
+	    top: -10px;
+	}
+	.navbar.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+    	font-size: 48px;
+	}
+	.navbar.responsive a.hidden {
+		display: block;
+	}
+	.navbar.responsive a.navHome {
+		display: none;
+	}
+	.navbar.responsive a.siteName {
+    	font-size: 56px;
+   		left: 0px;
+    	bottom: 0px;
 	}
 }
