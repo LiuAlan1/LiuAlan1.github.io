@@ -169,11 +169,13 @@ hr {
 
 	.pageName {
 	position: relative;
+	width: 90%;
     border-radius: 20px;
 	margin: 0 auto;
 	text-align: center;
 	background-color: white;
 	color: #443731;	
+	font-size: 54px;
 	}
 
 
