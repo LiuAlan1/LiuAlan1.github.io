@@ -262,7 +262,7 @@ hr {
 	}
 
 	.desktop-map {
-		display: none;
+		display: block;
 	}
 }
 
