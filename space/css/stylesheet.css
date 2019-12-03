@@ -157,6 +157,25 @@ hr {
 	display: none;
 }
 
+/*MOBILE CHECKS*/
+
+.mobile-form {
+	margin: auto;
+	display: none;
+}
+
+.desktop-form {
+	display: block;
+}
+
+.mobile-map {
+	margin: auto;
+	display: none;
+}
+
+.desktop-map {
+	display: block;
+}
 
 
 /*MEDIA QUERIES*/
@@ -230,6 +249,21 @@ hr {
 		font-size: 30px;
 	}
 
+	.mobile-form {
+		display: block;
+	}
+
+	.desktop-form {
+		display: none;
+	}
+
+	.mobile-map {
+		display: block;
+	}
+
+	.desktop-map {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1000px) and (orientation: portrait) {
