@@ -1,0 +1,32 @@
+.trail {
+    /* className for the trail elements */
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    background: blue;
+
+}
+
+.trail:hover {
+    filter: blur(4px);
+    opacity: 0.5;
+}
+
+html {
+    cursor: url('../cursor-resized.png'), auto;
+}
+a:hover {
+    cursor: url('../cursor-resized.png'), auto;
+}
+
+/*
+
+html {
+    cursor: url('../cursor-resized32x32.png'), auto;
+}
+a:hover {
+    cursor: url('../cursor-resized32x32.png'), auto;
+}
+
+*/
