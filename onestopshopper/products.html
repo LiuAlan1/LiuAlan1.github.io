@@ -7,7 +7,6 @@
    		<link rel="stylesheet" href="https://use.typekit.net/wfh0ymy.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     	<script src="js/javascript.js"></script>  
-    	<!--<script src="js/walgreens-storeinven.js"></script>-->
     	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	</head>
 
@@ -56,16 +55,38 @@
 		<br><br>
 	</body>
 	<script>
-		var apiKey = 'bL8gvedlapsuxSKgEMYaTh73oeHLsJvG';
+		
+		import axios from 'axios';
 
-		const Url = 'https://services-qa.walgreens.com/api/products/inventory/v2';
+		const axios = require('axios').default;
 
-		// axios.<method> will now provide autocomplete and parameter typings
+		const apiKeyInventory = 'bL8gvedlapsuxSKgEMYaTh73oeHLsJvG';
+		const apiKeyLocator = 'pf4AIUWI6Wpq7mXEukizcPamMZgTC99n';
+
+		const UrlInventory = 'https://services-qa.walgreens.com/api/products/inventory/v2';
+		const UrlLocator = 'https://services-qa.walgreens.com/api/stores/search/v1';
+
+		const instance = axios.create({
+		  baseURL: 'https://services-qa.walgreens.com/api/',
+		  timeout: 1000,
+		  headers: {'X-Custom-Header': 'foobar'}
+		});
+			axios.post(UrlLocator, {
+				apiKey: apiKeyLocator,
+				affId: 'storesapi',
+				zip: getZipCode(),
+				r: 10,
+				s: 10,
+				requestType: 'locator',
+			});
+		/*
+		// search for products
 		axios.post(Url, {
-			apiKey: apiKey,
-			affId: 'Flintstone',
+			apiKey: apiKeyInventory,
+			affId: 'storesapi',
 			store: '1120',
 			planograms: '07385209652'
 		});
+		*/
 	</script>
 </html>
