@@ -11,7 +11,7 @@ const instance = axios.create({
   headers: {'X-Custom-Header': 'foobar'}
 });
 
-axios.post(Url, {
+axios.post(UrlInventory, {
     apiKey: apiKeyInventory,
     affId: 'storesapi',
     store: '1120',

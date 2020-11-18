@@ -30,10 +30,13 @@ hr {
 
 a {
 	color: white;
+    display:block;
+	text-decoration: none;
+	opacity: 90%;
 }
 
 a:not(:hover) {
-	text-decoration: none;
+	opacity: 100%;
 }
 
 
@@ -43,6 +46,10 @@ a:not(:hover) {
 }
 
 
+.center {
+    margin: auto;
+    width: 40%;
+}
 
 .main {
 
@@ -53,6 +60,32 @@ a:not(:hover) {
 	position: absolute;
 	padding: 0;
 	text-align: center;
+
+}
+
+.zipcode {
+	font-weight: bold;
+	font-size: 30px;
+	position: relative;
+}
+
+.header {
+	font-weight: bold;
+	font-size: 48px;
+}
+
+.subtext {
+	font-weight: bold;
+	font-size: 30px;
+	position: relative;
+	bottom: 14px;
+}
+
+.description {
+	position: relative;
+	bottom: 10px;
+	font-size: 24px;
+	text-align: left;
 
 }
 
@@ -67,40 +100,206 @@ a:not(:hover) {
 	color: #000000;
 }
 
-/* GRID */
-
-.grid-container {
-
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: 8em; margin-right: 8em; margin-bottom: 8em; margin-top: 3em; 
+.graph{
+	width: 100%;
+	height: auto;
+	max-width: 300px;
 }
 
-.grid-item {
+.addbutton{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+}
+
+/* INPUT FORM */
+
+input[type=text] {
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+	background-color: #3348FF;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/* GRID */
+
+/* these classes define the areas to the classes*/
+.gridheader { grid-area: header; }
+.grid-Pos1 { grid-area: item1; }
+.grid-Pos2 { grid-area: item2; }
+.grid-Pos3 { grid-area: item3; }
+.grid-Pos4 { grid-area: item4; }
+.grid-Pos5 { grid-area: item5; }
+.grid-Pos6 { grid-area: item6; }
+.list-Pos1 { grid-area: list1; }
+.list-Pos2 { grid-area: list2; }
+.list-Pos3 { grid-area: list3; }
+.list-Pos4 { grid-area: list4; }
+
+
+.item {
 	opacity: 1;
-	border: 1px solid rgb(0, 0, 255);
-	padding: 2%;
-	margin: 1em;
-	text-align: center;
-	align-items: center; 
-	width: 400px;
 	flex-grow: 2;
 	flex: 1 1 1 1; 
+	border: 1px solid rgb(0, 0, 255);
 	font-family: 'Quicksand', sans-serif;
     color: white; 
 }
 
-.grid-item img{
+.item img {
+	vertical-align: middle;
+    object-fit: contain;
+}
+
+.index-grid {
+
+	display: grid; 
+	grid-template-columns: 49% 49% 2%; 
+	grid-template-rows: 10% 90%;
+  	justify-items: center;
+
+	/* this next section defines the areas */
+	grid-template-areas: 
+	"item1 item2 ."
+	"item1 item3 ."
+}
+
+.category-grid {
+
+	display: grid; 
+	grid-template-columns:  20% 20% 20% 20% 20%; 
+	grid-template-rows: auto;
+  	align-items: center;
+  	justify-items: center;
+
+	/* this next section defines the areas */
+	grid-template-areas: 
+	". header . . ."
+	". item1 item2 item3 ."
+	". item4 item5 item6 ."
+}
+
+.category-item {
+	margin: 1em;
+	padding: 2%;
+	text-align: center;
+	align-items: center; 
+	max-width: 400px;
+	max-height: 500px;
+}
+
+.category-item img{
 	width: 100%;
 	height: auto;
 	max-width: 300px;
-    object-fit: contain;
+}
+
+.list-grid {
+	font-size: 26px;
+	display: grid; 
+	text-align: left;
+	grid-template-columns: 20% 60% 20%; 
+	/* this next section defines the areas */
+	grid-template-areas: 
+	". header ."
+	". item1 ."
+	". item2 ."
+	". item3 ."
+	". item4 ."
+	". item5 ."
+	". item6 ."
+}
+
+.list-item {
+	width: 99%;
+	max-height: 200px;
+}
+
+.list-item-content {
+	display:grid;
+	width: 100%;
+	grid-template-columns: 10% 70% 20%; 
+	grid-template-areas: 
+	"list1 list2 list3"
+}
+
+
+.list-item-content img{
+	border: 1px solid rgb(0, 0, 255);
+	padding: 0.25%;
+	padding-right: 1%;
+	width: auto;
+	height: 128px;
+}
+
+.list-item-content div{
+	margin: auto;
+	text-align: right;
+}
+
+.detail-grid {
+
+	display: grid; 
+	grid-template-columns:  20% 30% 30% 20%; 
+	grid-template-rows: auto;
+  	align-items: center;
+
+	/* this next section defines the areas */
+	grid-template-areas: 
+	". item1 item2 ."
+	". item1 item3 ."
+	". item4 item4 ."
+	". item5 item5 ."
+}
+
+.list-store-content {
+	font-size: 26px;
+	display:grid;
+	width: 100%;
+	grid-template-columns: 10% 60% 15% 15%; 
+	grid-template-areas: 
+	"list1 list2 list3 list4"
+}
+
+.list-store-content img{
+	border: 1px solid rgb(0, 0, 255);
+	padding: 0.25%;
+	padding-right: 1%;
+	width: auto;
+	height: 128px;
+}
+
+.list-store-content div{
+	margin: auto;
+	text-align: right;
 }
      
 .gridheader { 
 	font-size: 64px;
 	position: relative;
-	top: 35%;
+	text-align: left;
+	padding-left: 0.5%; 
+}
+
+.pos-left{
+	text-align: left;
+}
+
+
+.floatright {
+	 float: right;
 }
 
 /*NAVIGATION BAR*/
@@ -167,23 +366,115 @@ a:not(:hover) {
 	display: none;
 }
 
-.orderButtonPos {
-	z-index: 101;
-	position: fixed;
-	right: 25px;
-	top: 25px;
-}
 
-.orderButtonNav {
-	height: 100px;
-
-}
-
-
-
-/*MEDIA QUERIES FOR NAV BAR*/
+/*MEDIA QUERIES*/
 
 @media screen and (max-width: 1000px) and (orientation: portrait) {
+
+	.index-grid {
+		grid-template-columns: 2% 96% 2%; 
+		grid-template-rows: 10% 30% 60%; 
+
+		grid-template-areas: 
+		". item2 ."
+		". item3 ."
+		". item1 ."
+	}
+
+	.category-grid {
+		grid-template-columns: 50% 50%; 
+		/* this next section defines the areas */
+		grid-template-areas: 
+		"header header"
+		"item1 item2"
+		"item3 item4"
+		"item5 item6"
+	}
+
+	.category-item {
+		max-width: 1000px;
+	}
+
+	.category-item img{
+		width: 100%;
+		height: auto;
+		max-width: 1000px;
+	    object-fit: contain;
+	}
+
+	.list-grid {
+		font-size: 40px;
+		grid-template-columns: 50% 50%; 
+		/* this next section defines the areas */
+		grid-template-areas: 
+		"header header"
+		"item1 item1"
+		"item2 item2"
+		"item3 item3"
+		"item4 item4"
+		"item5 item5"
+		"item6 item6"
+	}
+
+	.list-item {
+		width: 99%;
+	}
+
+	.list-item img{
+		width: auto;
+		height: 200px;
+	}
+
+	.detail-grid {
+
+		display: grid; 
+		grid-template-columns: 50% 50%; 
+		grid-template-rows: auto;
+	  	align-items: center;
+
+		/* this next section defines the areas */
+		grid-template-areas: 
+		"item2 item2"
+		"item1 item1"
+		"item5 item5"
+		"item3 item3"
+	}
+
+	.list-store-content {
+		font-size: 26px;
+		display:grid;
+		width: 100%;
+		grid-template-columns: 10% 60% 15% 15%; 
+		grid-template-areas: 
+		"list1 list2 list3 list4"
+	}
+
+	.list-store-content img{
+		border: 1px solid rgb(0, 0, 255);
+		padding: 0.25%;
+		padding-right: 1%;
+		width: auto;
+		height: 200px;
+	}
+
+	.list-store-content div{
+		margin: auto;
+		text-align: right;
+	}
+
+	.storeheader {
+		display: none;
+	}
+
+
+	.productimage {
+		text-align: center;
+	}
+	     
+	.gridheader { 
+		font-size: 100px;
+		position: relative;
+	}
 
 	.footer {
 		font-size: 30px;
@@ -281,6 +572,110 @@ a:not(:hover) {
 }
 
 @media screen and (max-width: 1000px) and (orientation: landscape) {
+
+	.index-grid {
+		grid-template-columns: 2% 96% 2%; 
+		grid-template-rows: 10% 30% 60%; 
+
+		grid-template-areas: 
+		". item2 ."
+		". item3 ."
+		". item1 ."
+	}
+
+	.category-grid {
+		grid-template-columns: 50% 50%; 
+		/* this next section defines the areas */
+		grid-template-areas: 
+		"header header"
+		"item1 item2"
+		"item3 item4"
+		"item5 item6"
+	}
+
+	.category-item {
+		max-width: 1000px;
+	}
+
+	.category-item img{
+		width: 100%;
+		height: auto;
+		max-width: 1000px;
+	    object-fit: contain;
+	}
+
+	.list-grid {
+		font-size: 40px;
+		grid-template-columns: 50% 50%; 
+		/* this next section defines the areas */
+		grid-template-areas: 
+		"header header"
+		"item1 item1"
+		"item2 item2"
+		"item3 item3"
+		"item4 item4"
+		"item5 item5"
+		"item6 item6"
+	}
+
+	.list-item {
+		width: 99%;
+	}
+
+	.list-item img{
+		width: auto;
+		height: 200px;
+	}
+
+	.detail-grid {
+
+		display: grid; 
+		grid-template-columns: 50% 50%; 
+		grid-template-rows: auto;
+	  	align-items: center;
+
+		/* this next section defines the areas */
+		grid-template-areas: 
+		"item2 item2"
+		"item1 item1"
+		"item5 item5"
+		"item3 item3"
+	}
+
+	.list-store-content {
+		font-size: 26px;
+		display:grid;
+		width: 100%;
+		grid-template-columns: 10% 60% 15% 15%; 
+		grid-template-areas: 
+		"list1 list2 list3 list4"
+	}
+
+	.list-store-content img{
+		border: 1px solid rgb(0, 0, 255);
+		padding: 0.25%;
+		padding-right: 1%;
+		width: auto;
+		height: 200px;
+	}
+
+	.list-store-content div{
+		margin: auto;
+		text-align: right;
+	}
+
+	.storeheader {
+		display: none;
+	}
+	
+	.productimage {
+		text-align: center;
+	}
+
+	.gridheader { 
+		font-size: 100px;
+		position: relative;
+	}
 
 	.footer {
 		font-size: 27px;

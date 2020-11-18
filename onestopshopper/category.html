@@ -15,7 +15,7 @@
 	        <a href="javascript:void(0);" class="icon" onclick="navbar();">&#9776;</a>
 	        <a href="index.html" class="siteName">One Stop Shopper</a>
 	        <a href="about.html" class="option">About</a>
-	        <a href="contact.html" class="option">Contact</a>
+	        <a href="mailto:aliu6@mail.sfsu.edu?subject=[One%20Stop%20Shopper]%20Replace text here" class="option">Contact</a>
 	        <a href="list.html" class="option">List</a>
 	        <a href="category.html" class="active option">Categories</a>
       	</nav>
@@ -29,31 +29,31 @@
 		        document.write(getZipCode());
 		    </script>
 	    	</p>
-	    	<div class="grid-container">
-				<div class="grid-item">
-					<div class="gridheader">Categories</div>
+	    	<div class="category-grid">
+				<div class="gridheader">
+					Categories
 				</div>
-				<div class="grid-item">
+				<div class="category-item item grid-Pos1">
 					<a href="products.html" onclick="saveCategory1('Hand Sanitizer');saveCategory2('Soap');"><img src="images/handsanitizer.jpg"><br>Hand Cleaning</a>
 				</div>
-				<div class="grid-item">
-					<a href="products.html" onclick="saveCategory1('Disinfectant');"><img src="images/disinfectant.jpg"><br>Disinfectants</a>
+				<div class="category-item item grid-Pos2">
+					<a href="products.html" onclick="saveCategory1('Disinfectant');saveCategory2('Hand Wipes');"><img src="images/disinfectant.jpg"><br>Disinfectants</a>
 				</div>
-				<div class="grid-item">
-					<a href="products.html" onclick="saveCategory1('Masks');saveCategory2('Gloves');"><img src="images/mask.jpg"><br>COVID Protection</a>
+				<div class="category-item item grid-Pos3">
+					<a href="products.html" onclick="saveCategory1('Webcams');saveCategory2('Microphone');"><img src="images/online.jpg"><br>Online Essentials</a>
 				</div>
-				<div class="grid-item">
+				<div class="category-item item grid-Pos4">
 					<a href="products.html" onclick="saveCategory1('Paper Towel');saveCategory2('Toilet Paper');"><img src="images/papercleaning.jpg"><br>Paper Cleaning</a>
 				</div>
-				<div class="grid-item">
+				<div class="category-item item grid-Pos5">
 					<a href="products.html" onclick="saveCategory1('Groceries');saveCategory2('Canned food');"><img src="images/groceries.jpg"><br>Groceries</a>
 				</div>
-				<div class="grid-item">
+				<div class="category-item item grid-Pos6">
 					<a href="products.html" onclick="saveCategory1('Medicine');saveCategory2('First Aid');"><img src="images/medicine.jpg"><br>Medicine</a>
 				</div>
 				<!--
-				<div class="grid-item">
-					<a href="products.html" onclick="saveStudent('Webcams');saveStudent('Microphone');"><img src="images/online.jpg"><br>Online Essentials</a>
+				<div class="category-item">
+					<a href="products.html" onclick="saveCategory1('Masks');saveCategory2('Gloves');"><img src="images/mask.jpg"><br>COVID Protection</a>
 				</div>
 				-->
 			</div>
