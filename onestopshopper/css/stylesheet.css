@@ -157,11 +157,12 @@ input[type=submit] {
 
 	display: grid; 
 	grid-template-columns: 49% 49% 2%; 
-	grid-template-rows: 10% 90%;
+	grid-template-rows: 10% 10% 80%;
 	justify-items: center;
 
 	/* this next section defines the areas */
 	grid-template-areas: 
+	"item1 . ."
 	"item1 item2 ."
 	"item1 item3 ."
 }
