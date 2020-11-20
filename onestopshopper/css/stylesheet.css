@@ -90,16 +90,10 @@ a:not(:hover) {
 
 }
 
-.graph{
-	width: 100%;
-	height: auto;
-	max-width: 300px;
-}
-
 .addbutton{
 	display: inline-block;
-	width: 32px;
-	height: 32px;
+	width: 28px;
+	height: 28px;
 }
 
 /* INPUT FORM */
@@ -137,6 +131,7 @@ input[type=submit] {
 .list-Pos2 { grid-area: list2; }
 .list-Pos3 { grid-area: list3; }
 .list-Pos4 { grid-area: list4; }
+.list-Pos5 { grid-area: list5; }
 
 
 .item {
@@ -248,19 +243,32 @@ input[type=submit] {
 
 	/* this next section defines the areas */
 	grid-template-areas: 
+	". item1 . ."
 	". item1 item2 ."
 	". item1 item3 ."
 	". item4 item4 ."
 	". item5 item5 ."
 }
 
+
+
+
+.detailheader {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.storehyperlink {
+	color: #418FDE;
+}
+
 .list-store-content {
 	font-size: 26px;
 	display:grid;
 	width: 100%;
-	grid-template-columns: 10% 60% 15% 15%; 
+	grid-template-columns: 10% 45% 15% 15% 15%; 
 	grid-template-areas: 
-	"list1 list2 list3 list4"
+	"list1 list2 list3 list4 list5"
 }
 
 .list-store-content img{
@@ -304,7 +312,6 @@ input[type=submit] {
 	width: 101%;
 	height: 90px;
 	z-index: 100;
-	box-shadow:10px 10px 70px grey;
 }
 
 
