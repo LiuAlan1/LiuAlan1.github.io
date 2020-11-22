@@ -63,6 +63,16 @@ a:not(:hover) {
 	text-align: center;
 
 }
+.disable-scroll{
+	margin: 0;
+	height: 100%;
+	overflow: hidden
+}
+
+.coverimage {
+	position: relative;
+	bottom: 15px;
+}
 
 .zipcode {
 	font-weight: bold;
@@ -132,6 +142,10 @@ input[type=submit] {
 .list-Pos3 { grid-area: list3; }
 .list-Pos4 { grid-area: list4; }
 .list-Pos5 { grid-area: list5; }
+.header-Pos1 { grid-area: header1; }
+.header-Pos2 { grid-area: header2; }
+.header-Pos3 { grid-area: header3; display: none;}
+.header-Pos4 { grid-area: header4; display: none;}
 
 
 .item {
@@ -152,14 +166,14 @@ input[type=submit] {
 
 	display: grid; 
 	grid-template-columns: 49% 49% 2%; 
-	grid-template-rows: 10% 10% 80%;
+	grid-template-rows: 10% 30% 60%;
 	justify-items: center;
 
 	/* this next section defines the areas */
 	grid-template-areas: 
 	"item1 . ."
-	"item1 item2 ."
 	"item1 item3 ."
+	"item1 item2 ."
 }
 
 .category-grid {
@@ -172,14 +186,14 @@ input[type=submit] {
 
 	/* this next section defines the areas */
 	grid-template-areas: 
-	". header . . ."
+	". header header header ."
 	". item1 item2 item3 ."
 	". item4 item5 item6 ."
 }
 
 .category-item {
-	margin: 1em;
 	padding: 5%;
+	margin-top: 3%;
 	text-align: center;
 	align-items: center; 
 	max-width: 400px;
@@ -190,6 +204,22 @@ input[type=submit] {
 	width: 100%;
 	height: auto;
 	max-width: 300px;
+}
+
+.category-header {
+	display:grid;
+	width: 95%;
+	align-items: center;
+	grid-template-columns: 30% 70%; 
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"header1 header2"
+}
+
+.changeZip {
+	display: inline-block;
+	text-align: right;
+	padding-right: 1%;
 }
 
 .list-grid {
@@ -250,9 +280,6 @@ input[type=submit] {
 	". item5 item5 ."
 }
 
-
-
-
 .detailheader {
 	font-weight: bold;
 	font-size: 30px;
@@ -283,6 +310,41 @@ input[type=submit] {
 	text-align: right;
 }
 
+.savelist{
+	display: inline-block;
+	float: right;
+	text-align: right;
+	padding-right: 1%;
+	font-size: 42px;
+}
+
+.savelist-grid {
+	display:grid;
+	width: 98.5%;
+	align-items: center;
+	grid-template-columns: 80% 20%; 
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"header1 header2"
+	"header3 header3"
+	"header4 header4"
+}
+
+.savelist-grid.showlink.header-Pos3 {
+	display: block;
+}
+
+.savelist-grid.showlink.header-Pos4 {
+	display: block;
+}
+
+.saveconfirm {
+	font-size: 30px;
+	position: relative;
+	top: 10px;
+
+}
+
 .gridheader { 
 	font-size: 64px;
 	position: relative;
@@ -293,7 +355,6 @@ input[type=submit] {
 .pos-left{
 	text-align: left;
 }
-
 
 .floatright {
 	float: right;
@@ -366,6 +427,218 @@ input[type=submit] {
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 1000px) and (orientation: portrait) {
+
+
+	.zipcode {
+		font-size: 50px;
+	}
+
+	.header {
+		bottom: 10px;
+		font-size: 70px;
+	}
+
+	.subtext {
+		font-size: 40px;
+	}
+
+	.description {
+		position: relative;
+		font-size: 32px;
+		text-align: left;
+
+	}
+
+	input[type=text] {
+		font-size: 50px;
+	}
+
+	input[type=submit] {
+		font-size: 50px;
+	}
+
+	.index-grid {
+		grid-template-columns: 5% 91% 4%; 
+		grid-template-rows: 28% 15% 57%; 
+
+		grid-template-areas: 
+		". item3 ."
+		". item2 ."
+		"item1 item1 item1"
+	}
+
+	.category-grid {
+		grid-template-columns: 50% 50%; 
+		/* this next section defines the areas */
+		grid-template-areas: 
+		"header header"
+		"item1 item2"
+		"item3 item4"
+		"item5 item6"
+	}
+
+	.category-item {
+		max-width: 1000px;
+	}
+
+	.category-item img{
+		width: 100%;
+		height: auto;
+		max-width: 1000px;
+		object-fit: contain;
+	}
+
+	.list-grid {
+		font-size: 40px;
+		grid-template-columns: 50% 50%; 
+		/* this next section defines the areas */
+		grid-template-areas: 
+		"header header"
+		"item1 item1"
+		"item2 item2"
+		"item3 item3"
+		"item4 item4"
+		"item5 item5"
+		"item6 item6"
+	}
+
+	.list-item {
+		width: 99%;
+	}
+
+	.list-item img{
+		width: auto;
+		height: 200px;
+	}
+
+	.list-item-content {
+		grid-template-columns: 10% 65% 25%; 
+	}
+
+	.floatright {
+		padding-right: 10px;
+		font-size: 28px;
+	}
+
+	.detail-grid {
+
+		display: grid; 
+		grid-template-columns: 50% 50%; 
+		grid-template-rows: auto;
+		align-items: center;
+
+		/* this next section defines the areas */
+		grid-template-areas: 
+		"item2 item2"
+		"item1 item1"
+		"item5 item5"
+		"item3 item3"
+	}
+
+	.list-store-content {
+		font-size: 26px;
+		display:grid;
+		width: 100%;
+		grid-template-columns: 10% 45% 15% 15% 15%; 
+		grid-template-areas: 
+		"list1 list2 list3 list4 list5"
+	}
+
+	.list-store-content img{
+		padding: 0.25%;
+		padding-right: 1%;
+		width: auto;
+		height: 96px;
+	}
+
+	.list-store-content div{
+		margin: auto;
+		text-align: center;
+	}
+
+	.storeheader {
+		display: none;
+	}
+
+
+	.productimage {
+		text-align: center;
+	}
+
+	.gridheader { 
+		font-size: 100px;
+		position: relative;
+	}
+
+	.footer {
+		font-size: 30px;
+	}
+
+	.navbar {
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+
+	.navbar a {
+		display: none;
+	}
+
+	.navbar a.icon {
+		float: left;
+		display: block;
+		font-size: 48px;
+		top: -10px;
+	}
+
+	.navbar a.navHome {
+		display: none;
+	}
+
+	.front {
+		right: 0;
+		background-position: bottom;
+
+	}
+}
+
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+
+	.navbar.responsive {
+		position: absolute;
+		height: 38.1%;
+	}
+	.navbar.responsive.icon {
+		position: absolute;
+		right: 0px;
+		font-size: 48px;
+		top: -10px;
+	}
+	.navbar.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+		font-size: 48px;
+	}
+	.navbar.responsive a.hidden {
+		display: block;
+	}
+	.navbar.responsive a.navHome {
+		display: none;
+	}
+	.navbar.responsive a.siteName {
+		font-size: 56px;
+		left: 0px;
+		bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+
+	.disable-scroll {
+		overflow: scroll;
+	}
 
 	.zipcode {
 		font-size: 50px;
@@ -477,21 +750,21 @@ input[type=submit] {
 		font-size: 26px;
 		display:grid;
 		width: 100%;
-		grid-template-columns: 10% 60% 15% 15%; 
+		grid-template-columns: 10% 45% 15% 15% 15%; 
 		grid-template-areas: 
-		"list1 list2 list3 list4"
+		"list1 list2 list3 list4 list5"
 	}
 
 	.list-store-content img{
 		padding: 0.25%;
 		padding-right: 1%;
 		width: auto;
-		height: 200px;
+		height: 96px;
 	}
 
 	.list-store-content div{
 		margin: auto;
-		text-align: right;
+		text-align: center;
 	}
 
 	.storeheader {
@@ -534,227 +807,13 @@ input[type=submit] {
 		display: none;
 	}
 
-	.orderButtonPos {
-		display: none;
-	}
-
 	.front {
-
 		right: 0;
 		background-position: bottom;
 
 	}
-
-
-
 }
 
-@media screen and (max-width: 1000px) and (orientation: portrait) {
-
-	.navbar.responsive {
-		position: absolute;
-		height: 50.5%;
-	}
-	.navbar.responsive.icon {
-		position: absolute;
-		right: 0px;
-		font-size: 48px;
-		top: -10px;
-	}
-	.navbar.responsive a {
-		float: none;
-		display: block;
-		text-align: left;
-		font-size: 48px;
-	}
-	.navbar.responsive a.hidden {
-		display: block;
-	}
-	.navbar.responsive a.navHome {
-		display: none;
-	}
-	.navbar.responsive a.siteName {
-		font-size: 56px;
-		left: 0px;
-		bottom: 0px;
-	}
-}
-
-@media screen and (max-width: 1000px) and (orientation: landscape) {
-
-	.zipcode {
-		font-size: 50px;
-	}
-
-	.header {
-		bottom: 10px;
-		font-size: 70px;
-	}
-
-	.subtext {
-		font-size: 40px;
-	}
-
-	.description {
-		position: relative;
-		font-size: 32px;
-		text-align: left;
-
-	}
-
-	input[type=text] {
-		font-size: 50px;
-	}
-
-	input[type=submit] {
-		font-size: 50px;
-	}
-
-	.index-grid {
-		grid-template-columns: 2% 96% 2%; 
-		grid-template-rows: 10% 30% 60%; 
-
-		grid-template-areas: 
-		". item2 ."
-		". item3 ."
-		". item1 ."
-	}
-
-	.category-grid {
-		grid-template-columns: 50% 50%; 
-		/* this next section defines the areas */
-		grid-template-areas: 
-		"header header"
-		"item1 item2"
-		"item3 item4"
-		"item5 item6"
-	}
-
-	.category-item {
-		max-width: 1000px;
-	}
-
-	.category-item img{
-		width: 100%;
-		height: auto;
-		max-width: 1000px;
-		object-fit: contain;
-	}
-
-	.list-grid {
-		font-size: 40px;
-		grid-template-columns: 50% 50%; 
-		/* this next section defines the areas */
-		grid-template-areas: 
-		"header header"
-		"item1 item1"
-		"item2 item2"
-		"item3 item3"
-		"item4 item4"
-		"item5 item5"
-		"item6 item6"
-	}
-
-	.list-item {
-		width: 99%;
-	}
-
-	.list-item img{
-		width: auto;
-		height: 200px;
-	}
-
-	.list-item-content {
-		grid-template-columns: 10% 65% 25%; 
-	}
-
-	.floatright {
-		padding-right: 10px;
-		font-size: 28px;
-	}
-
-	.detail-grid {
-
-		display: grid; 
-		grid-template-columns: 50% 50%; 
-		grid-template-rows: auto;
-		align-items: center;
-
-		/* this next section defines the areas */
-		grid-template-areas: 
-		"item2 item2"
-		"item1 item1"
-		"item5 item5"
-		"item3 item3"
-	}
-
-	.list-store-content {
-		font-size: 26px;
-		display:grid;
-		width: 100%;
-		grid-template-columns: 10% 60% 15% 15%; 
-		grid-template-areas: 
-		"list1 list2 list3 list4"
-	}
-
-	.list-store-content img{
-		padding: 0.25%;
-		padding-right: 1%;
-		width: auto;
-		height: 200px;
-	}
-
-	.list-store-content div{
-		margin: auto;
-		text-align: right;
-	}
-
-	.storeheader {
-		display: none;
-	}
-	
-	.productimage {
-		text-align: center;
-	}
-
-	.gridheader { 
-		font-size: 100px;
-		position: relative;
-	}
-
-	.footer {
-		font-size: 27px;
-		opacity:.75;
-		height: 18%;
-	}
-
-	.navbar {
-		width: 100%;
-		position: absolute;
-		top: 0px;
-		left: 0px;
-	}
-
-	.navbar a {
-		display: none;
-	}
-
-	.navbar a.icon {
-		float: left;
-		display: block;
-		font-size: 36px;
-		top: -10px;
-	}
-
-	.navbar a.navHome {
-		display: none;
-	}
-
-	.orderButtonPos {
-		display: none;
-	}
-
-}
 
 @media screen and (max-width: 1000px) and (orientation: landscape) {
 
@@ -774,10 +833,10 @@ input[type=submit] {
 		left: 0px;
 	}
 	.navbar.responsive a.option {
-		font-size: 24px;
+		font-size: 30px;
 	}
 	.navbar.responsive a.active {
-		font-size: 24px;
+		font-size: 30px;
 	}
 	.navbar.responsive a.hidden {
 		display: block;
@@ -786,7 +845,7 @@ input[type=submit] {
 		display: none;
 	}
 	.navbar.responsive a.siteName {
-		font-size: 36px;
+		font-size: 40px;
 		left: 0px;
 		bottom: 0px;
 	}

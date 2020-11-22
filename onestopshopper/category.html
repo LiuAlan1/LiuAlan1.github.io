@@ -7,7 +7,12 @@
    		<link rel="stylesheet" href="https://use.typekit.net/wfh0ymy.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     	<script src="js/javascript.js"></script>   
+    	<script src="js/checkZip.js"></script>   
+    	<!--
     	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    	<script type="module" src="js/walgreens-locator.js"></script>  
+    	<script type="module" src="js/walgreens-inven.js"></script> 
+    	-->
 	</head>
 
 	<body>
@@ -17,21 +22,23 @@
 	        <a href="about.html" class="option">About</a>
 	        <a href="mailto:aliu6@mail.sfsu.edu?subject=[One%20Stop%20Shopper]%20Replace text here" class="option">Contact</a>
 	        <a href="list.html" class="option">List</a>
-	        <a href="category.html" class="active option">Categories</a>
+	        <a href="category.html" class="option">Categories</a>
       	</nav>
 
       	
  		
 	    <div class="main">
-
-	    	<p>zip code:
-			<script type="text/javascript">
-		        document.write(getZipCode());
-		    </script>
-	    	</p>
 	    	<div class="category-grid">
-				<div class="gridheader">
-					Categories
+				<div class="category-header gridheader">
+					<div class="header-Pos1">
+						Categories
+					</div>
+					<div class="header-Pos2 changeZip">
+						<form action="javascript:zipCodeInput();">
+	      					<input id="textBox" type="text" onkeypress="return isNumberKey(event)" name="answer" size="5" maxlength="5">
+	      					<input type="submit" value=">">
+      					</form>
+					</div>
 				</div>
 				<div class="category-item item grid-Pos1">
 					<a href="products.html" onclick="saveCategory1('Hand Sanitizer');saveCategory2('Soap');"><img src="images/handsanitizer.jpg"><br><br>Hand Cleaning</a>

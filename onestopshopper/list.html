@@ -7,8 +7,8 @@
    		<link rel="stylesheet" href="https://use.typekit.net/wfh0ymy.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     	<script src="js/javascript.js"></script>  
-    	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     	<!--
+    	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     	<script type="module" src="js/walgreens-locator.js"></script>  
     	<script type="module" src="js/walgreens-inven.js"></script> 
     	-->
@@ -20,16 +20,29 @@
 	        <a href="index.html" class="siteName">One Stop Shopper</a>
 	        <a href="about.html" class="option">About</a>
 	        <a href="mailto:aliu6@mail.sfsu.edu?subject=[One%20Stop%20Shopper]%20Replace text here" class="option">Contact</a>
-	        <a href="list.html" class="option">List</a>>
-	        <a href="category.html" class="active option">Categories</a>
+	        <a href="list.html" class="option">List</a>
+	        <a href="category.html" class="option">Categories</a>
       	</nav>
 
       	
  		
 	    <div class="main">
 	    	<div class="list-grid">
-				<div class="gridheader">
-					 Shopping List
+				<div class="gridheader savelist-grid" id="list">
+					<div class="header-Pos1">
+						Shopping List
+					</div>
+					<div class="header-Pos2 savelist" id="hidetext1">
+						<a href="javascript:void(0);" onclick="saveList();">
+							Save list
+						</a>
+					</div>
+					<div class="header-Pos3 saveconfirm" id="hidetext2">
+						List saved. You may bookmark this page or save the link.
+					</div>
+					<div class="header-Pos4" id="hidetext3">
+						<input id="textBox" type="text" name="link" style="width: 99.1%; position: relative; left: -3px" value="https://onestopshopper.com/list/823475875326" readonly>
+					</div>
 				</div>
 				<div class="list-item item grid-Pos1">
 					<a href="productdetail.html" onclick="saveProduct('Hand Sanitizer');">

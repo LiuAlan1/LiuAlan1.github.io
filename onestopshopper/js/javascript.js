@@ -30,8 +30,32 @@ function zipCodeInput() {
     }   
 }
 
+function isNumberKey(evt){
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57)){
+        return false;
+    } else {
+        return true;
+    }
+}
+
+function saveList() {
+    var x = document.getElementById("list");
+    if (x.className === "gridheader savelist-grid") {
+        x.className += "-showlink";
+        document.getElementById("hidetext1").style.display = "none";
+        document.getElementById("hidetext2").style.display = "block";
+        document.getElementById("hidetext3").style.display = "block";
+    }
+}
+
+
 function getZipCode() {
     return localStorage.getItem("validZip");  
+}
+
+function getZipCodeInt() {
+    return parseInt(localStorage.getItem("validZip"));  
 }
 
 function saveCategory1(i) {
