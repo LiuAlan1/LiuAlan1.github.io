@@ -261,7 +261,7 @@ input[type=submit] {
 
 .list-item-content div{
 	margin: auto;
-	text-align: right;
+	text-align: center;
 }
 
 .detail-grid {
@@ -307,7 +307,7 @@ input[type=submit] {
 
 .list-store-content div{
 	margin: auto;
-	text-align: right;
+	text-align: center;
 }
 
 .savelist{
@@ -479,6 +479,9 @@ input[type=submit] {
 
 	.category-item {
 		max-width: 1000px;
+		font-size: 36px;
+		font-weight: bold;
+		bottom: 10px;
 	}
 
 	.category-item img{
@@ -503,16 +506,17 @@ input[type=submit] {
 	}
 
 	.list-item {
-		width: 99%;
+		width: 101%;
 	}
 
 	.list-item img{
 		width: auto;
-		height: 200px;
+		height: 150px;
 	}
 
 	.list-item-content {
 		grid-template-columns: 10% 65% 25%; 
+		font-size: 36px;
 	}
 
 	.floatright {
@@ -520,8 +524,14 @@ input[type=submit] {
 		font-size: 28px;
 	}
 
-	.detail-grid {
+	.mobileoverflow{
+		width: 400px;
+		overflow-wrap: break-word;
+	}
 
+
+	.detail-grid {
+		width: 101%;
 		display: grid; 
 		grid-template-columns: 50% 50%; 
 		grid-template-rows: auto;
@@ -532,7 +542,6 @@ input[type=submit] {
 		"item2 item2"
 		"item1 item1"
 		"item5 item5"
-		"item3 item3"
 	}
 
 	.list-store-content {
@@ -556,13 +565,25 @@ input[type=submit] {
 		text-align: center;
 	}
 
+	.graph {
+		display: none;
+	}
+
+	.price {
+		font-size: 30px;
+	}
+
+	.detailheader {
+		font-size: 40px;
+	}
+
 	.storeheader {
 		display: none;
 	}
 
-
 	.productimage {
 		text-align: center;
+		background: white;
 	}
 
 	.gridheader { 
@@ -690,6 +711,9 @@ input[type=submit] {
 
 	.category-item {
 		max-width: 1000px;
+		font-size: 36px;
+		font-weight: bold;
+		bottom: 10px;
 	}
 
 	.category-item img{
@@ -700,6 +724,7 @@ input[type=submit] {
 	}
 
 	.list-grid {
+		width: 101%;
 		font-size: 40px;
 		grid-template-columns: 50% 50%; 
 		/* this next section defines the areas */
@@ -732,7 +757,7 @@ input[type=submit] {
 	}
 
 	.detail-grid {
-
+		width: 101%;
 		display: grid; 
 		grid-template-columns: 50% 50%; 
 		grid-template-rows: auto;
@@ -743,7 +768,6 @@ input[type=submit] {
 		"item2 item2"
 		"item1 item1"
 		"item5 item5"
-		"item3 item3"
 	}
 
 	.list-store-content {
@@ -766,6 +790,19 @@ input[type=submit] {
 		margin: auto;
 		text-align: center;
 	}
+	
+	.graph {
+		display: none;
+	}
+	
+	.price {
+		font-size: 30px;
+	}
+
+	.detailheader {
+		font-size: 40px;
+	}
+
 
 	.storeheader {
 		display: none;
@@ -774,6 +811,7 @@ input[type=submit] {
 
 	.productimage {
 		text-align: center;
+		background: white;
 	}
 
 	.gridheader { 
