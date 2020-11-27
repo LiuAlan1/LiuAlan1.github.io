@@ -127,6 +127,7 @@ input[type=submit] {
 	cursor: pointer;
 }
 
+
 /* GRID */
 
 /* these classes define the areas to the classes*/
@@ -225,13 +226,13 @@ input[type=submit] {
 .list-grid {
 	font-size: 26px;
 	display: grid; 
-	text-align: left;
 	grid-template-columns: 20% 60% 20%; 
 	/* this next section defines the areas */
 	grid-template-areas: 
 	". header ."
 	". item1 ."
 	". item2 ."
+	". item3 ."
 }
 
 .list-item {
@@ -274,6 +275,7 @@ input[type=submit] {
 	". item1 item3 ."
 	". item4 item4 ."
 	". item5 item5 ."
+	". item6 item6 ."
 }
 
 .detailheader {
@@ -496,9 +498,6 @@ input[type=submit] {
 		"item1 item1"
 		"item2 item2"
 		"item3 item3"
-		"item4 item4"
-		"item5 item5"
-		"item6 item6"
 	}
 
 	.list-item {
@@ -538,6 +537,7 @@ input[type=submit] {
 		"item2 item2"
 		"item1 item1"
 		"item5 item5"
+		"item6 item6"
 	}
 
 	.list-store-content {
@@ -729,9 +729,6 @@ input[type=submit] {
 		"item1 item1"
 		"item2 item2"
 		"item3 item3"
-		"item4 item4"
-		"item5 item5"
-		"item6 item6"
 	}
 
 	.list-item {
@@ -764,6 +761,7 @@ input[type=submit] {
 		"item2 item2"
 		"item1 item1"
 		"item5 item5"
+		"item6 item6"
 	}
 
 	.list-store-content {
