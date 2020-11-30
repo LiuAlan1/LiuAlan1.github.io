@@ -248,14 +248,6 @@ input[type=submit] {
 	"list1 list2 list3"
 }
 
-
-.list-item-content img{
-	padding: 0.25%;
-	padding-right: 1%;
-	width: auto;
-	height: 128px;
-}
-
 .list-item-content div{
 	margin: auto;
 	text-align: center;
@@ -264,7 +256,7 @@ input[type=submit] {
 .detail-grid {
 
 	display: grid; 
-	grid-template-columns:  20% 30% 30% 20%; 
+	grid-template-columns: 20% 30% 30% 20%; 
 	grid-template-rows: auto;
 	align-items: center;
 
@@ -291,17 +283,18 @@ input[type=submit] {
 	font-size: 26px;
 	display:grid;
 	width: 100%;
-	grid-template-columns: 10% 45% 15% 15% 15%; 
+	grid-template-columns: 10% 50% 10% 10% 10% 10%; 
 	grid-template-areas: 
-	"list1 list2 list3 list4 list5"
+	"list1 list2 list3 list4 list5 list6"
 }
 
-.list-store-content img{
+.iconresize img{
 	padding: 0.25%;
 	padding-right: 1%;
 	width: auto;
 	height: 128px;
 }
+
 
 .list-store-content div{
 	margin: auto;
@@ -314,6 +307,19 @@ input[type=submit] {
 	text-align: right;
 	padding-right: 1%;
 	font-size: 42px;
+}
+
+.list-save-content {
+	display:grid;
+	width: 100%;
+	grid-template-columns: 10% 50% 20% 20%; 
+	grid-template-areas: 
+	"list1 list2 list3 list4"
+}
+
+.list-save-content div{
+	margin: auto;
+	text-align: center;
 }
 
 .savelist-grid {
@@ -506,7 +512,6 @@ input[type=submit] {
 
 	.list-item img{
 		width: auto;
-		height: 150px;
 	}
 
 	.list-item-content {
@@ -544,16 +549,14 @@ input[type=submit] {
 		font-size: 26px;
 		display:grid;
 		width: 100%;
-		grid-template-columns: 10% 45% 15% 15% 15%; 
+		grid-template-columns: 13% 35% 13% 13% 13% 13%; 
 		grid-template-areas: 
-		"list1 list2 list3 list4 list5"
+		"list1 list2 list3 list4 list5 list6"
 	}
 
-	.list-store-content img{
-		padding: 0.25%;
-		padding-right: 1%;
+	.iconresize img{
 		width: auto;
-		height: 96px;
+		height: 128px;
 	}
 
 	.list-store-content div{
@@ -737,7 +740,6 @@ input[type=submit] {
 
 	.list-item img{
 		width: auto;
-		height: 200px;
 	}
 
 	.list-item-content {
@@ -768,23 +770,21 @@ input[type=submit] {
 		font-size: 26px;
 		display:grid;
 		width: 100%;
-		grid-template-columns: 10% 45% 15% 15% 15%; 
+		grid-template-columns: 13% 35% 13% 13% 13% 13%; 
 		grid-template-areas: 
-		"list1 list2 list3 list4 list5"
+		"list1 list2 list3 list4 list5 list6"
 	}
 
-	.list-store-content img{
-		padding: 0.25%;
-		padding-right: 1%;
+	.iconresize img{
 		width: auto;
-		height: 96px;
+		height: 128px;
 	}
 
 	.list-store-content div{
 		margin: auto;
 		text-align: center;
 	}
-	
+
 	.graph {
 		display: none;
 	}
