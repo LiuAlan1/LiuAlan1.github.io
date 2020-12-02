@@ -49,6 +49,12 @@ function saveList() {
     }
 }
 
+function getTime() {
+    var time = "";
+    var seconds = new Date().getTime() / 1000;
+    return seconds;
+}
+
 
 function getZipCode() {
     return localStorage.getItem("validZip");  
@@ -57,6 +63,7 @@ function getZipCode() {
 function getZipCodeInt() {
     return parseInt(localStorage.getItem("validZip"));  
 }
+
 
 function saveCategory1(i) {
     localStorage.setItem("selCategory1", i);  
