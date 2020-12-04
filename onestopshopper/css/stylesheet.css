@@ -290,9 +290,19 @@ input[type=submit] {
 	font-size: 24px;
 }
 
+.disclaimer {
+	text-align: left;
+	font-size: 18px;
+}
+
+.discmobile {
+	display: none;
+}
+
 .detailheader {
 	font-weight: bold;
 	font-size: 40px;
+	padding-bottom: 3%;
 }
 
 .storehyperlink {
@@ -601,12 +611,30 @@ input[type=submit] {
 		font-size: 32px;
 	}
 
+	.disclaimer {
+		font-size: 28px;
+		display: none;
+	}
+
+	.disclaimer-showdisc {
+		text-align: left;
+		font-size: 28px;
+		display: block;
+	}
+
+	.discmobile {
+		display: block;
+		padding-bottom: 1%
+	}
+
+
 	.price {
 		font-size: 30px;
 	}
 
 	.detailheader {
 		font-size: 60px;
+		padding-bottom: 0%;
 	}
 
 	.storeheader {
@@ -831,6 +859,23 @@ input[type=submit] {
 	.timestamp {
 		font-size: 32px;
 	}
+
+	.disclaimer {
+		font-size: 24.5px;
+		display: none;
+	}
+
+	.disclaimer-showdisc {
+		text-align: left;
+		font-size: 24.5px;
+		display: block;
+	}
+
+	.discmobile {
+		display: block;
+		padding-bottom: 1%
+	}
+
 	
 	.price {
 		font-size: 30px;

@@ -49,6 +49,15 @@ function saveList() {
     }
 }
 
+function disclaimer() {
+    var x = document.getElementById("disc");
+    if (x.className === "disclaimer") {
+        x.className += "-showdisc";
+    } else {
+        x.className = "disclaimer";
+    }
+}
+
 function getTime() {
     var time = "";
     var seconds = new Date().getTime() / 1000;
