@@ -559,7 +559,7 @@ input[type=submit] {
 	}
 
 	.mobileoverflow{
-		width: 400px;
+		width: 390px;
 		overflow-wrap: break-word;
 	}
 
@@ -673,10 +673,6 @@ input[type=submit] {
 		top: -10px;
 	}
 
-	.navbar a.navHome {
-		display: none;
-	}
-
 	.front {
 		right: 0;
 		background-position: bottom;
@@ -701,12 +697,6 @@ input[type=submit] {
 		display: block;
 		text-align: left;
 		font-size: 48px;
-	}
-	.navbar.responsive a.hidden {
-		display: block;
-	}
-	.navbar.responsive a.navHome {
-		display: none;
 	}
 	.navbar.responsive a.siteName {
 		font-size: 56px;
@@ -814,7 +804,7 @@ input[type=submit] {
 	}
 
 	.mobileoverflow{
-		width: 400px;
+		width: 390px;
 		overflow-wrap: break-word;
 	}
 
