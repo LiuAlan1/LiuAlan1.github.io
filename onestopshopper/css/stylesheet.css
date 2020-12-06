@@ -742,11 +742,11 @@ input[type=submit] {
 	}
 
 	input[type=text] {
-		font-size: 50px;
+		font-size: 40px;
 	}
 
 	input[type=submit] {
-		font-size: 50px;
+		font-size: 40px;
 	}
 
 	.index-grid {
@@ -887,7 +887,7 @@ input[type=submit] {
 	}
 
 	.detailheader {
-		font-size: 40px;
+		font-size: 50px;
 	}
 
 
@@ -895,23 +895,19 @@ input[type=submit] {
 		display: none;
 	}
 
-
 	.productimage {
 		text-align: center;
 		background: white;
 	}
 
 	.gridheader { 
-		font-size: 100px;
+		font-size: 60px;
 		position: relative;
-	}
-
-	.footer {
-		font-size: 30px;
 	}
 
 	.navbar {
 		width: 100%;
+		height: 10%;
 		position: absolute;
 		top: 0px;
 		left: 0px;
@@ -919,17 +915,17 @@ input[type=submit] {
 
 	.navbar a {
 		display: none;
+		padding: 5px;
 	}
 
 	.navbar a.icon {
+		padding-left: 20px;
+		padding-top: 20px;
+		padding-right: 20px;
 		float: left;
 		display: block;
-		font-size: 48px;
-		top: -10px;
-	}
-
-	.navbar a.navHome {
-		display: none;
+		font-size: 30px;
+		top: -14px;
 	}
 
 	.front {
@@ -944,34 +940,32 @@ input[type=submit] {
 
 	.navbar.responsive {
 		position: absolute;
-		height: 100%;
+		height: 60%;
+	}
+	.navbar.responsive.icon {
+		position: absolute;
+		font-size: 30px;
+		top: -10px;
+		left: 0px;
+		padding: 0px;
 	}
 	.navbar.responsive a {
 		float: none;
 		display: block;
 		text-align: left;
 	}
-	.navbar.responsive.icon {
-		position: absolute;
-		font-size: 36px;
-		top: -10px;
-		left: 0px;
-	}
 	.navbar.responsive a.option {
-		font-size: 30px;
+		font-size: 24px;
+		padding-top: 1%;
+		padding-left: 1%;
 	}
 	.navbar.responsive a.active {
-		font-size: 30px;
-	}
-	.navbar.responsive a.hidden {
-		display: block;
-	}
-	.navbar.responsive a.navHome {
-		display: none;
+		font-size: 24px;
 	}
 	.navbar.responsive a.siteName {
-		font-size: 40px;
+		font-size: 32px;
+		font-weight: bold;
 		left: 0px;
-		bottom: 0px;
+		padding-left: 1%;
 	}
 }
