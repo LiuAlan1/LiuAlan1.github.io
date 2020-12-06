@@ -460,7 +460,7 @@ input[type=submit] {
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 1000px) and (orientation: portrait) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
 
 	.about {
 		font-size: 70px;
@@ -683,11 +683,11 @@ input[type=submit] {
 	}
 }
 
-@media screen and (max-width: 1000px) and (orientation: portrait) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
 
 	.navbar.responsive {
 		position: absolute;
-		height: 38.1%;
+		height: 670px;
 	}
 	.navbar.responsive.icon {
 		position: absolute;
@@ -708,7 +708,7 @@ input[type=submit] {
 	}
 }
 
-@media screen and (max-width: 1000px) and (orientation: landscape) {
+@media screen and (max-width: 1367px) and (orientation: landscape) {
 
 	.disable-scroll {
 		overflow: scroll;
@@ -905,7 +905,7 @@ input[type=submit] {
 
 	.navbar {
 		width: 100%;
-		height: 10%;
+		height: 60px;
 		position: absolute;
 		top: 0px;
 		left: 0px;
@@ -934,11 +934,11 @@ input[type=submit] {
 }
 
 
-@media screen and (max-width: 1000px) and (orientation: landscape) {
+@media screen and (max-width: 1367px) and (orientation: landscape) {
 
 	.navbar.responsive {
 		position: absolute;
-		height: 60%;
+		height: 330px;
 	}
 	.navbar.responsive.icon {
 		position: absolute;
