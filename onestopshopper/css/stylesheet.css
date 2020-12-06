@@ -563,6 +563,10 @@ input[type=submit] {
 		overflow-wrap: break-word;
 	}
 
+	.detailoverflow{
+		width: 300px;
+		overflow-wrap: break-word;
+	}
 
 	.detail-grid {
 		width: 101%;
@@ -626,7 +630,6 @@ input[type=submit] {
 		display: block;
 		padding-bottom: 1%
 	}
-
 
 	.price {
 		font-size: 30px;
@@ -804,7 +807,12 @@ input[type=submit] {
 	}
 
 	.mobileoverflow{
-		width: 390px;
+		width: 400px;
+		overflow-wrap: break-word;
+	}
+
+	.detailoverflow{
+		width: 300px;
 		overflow-wrap: break-word;
 	}
 
