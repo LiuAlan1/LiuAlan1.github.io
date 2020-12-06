@@ -33,7 +33,7 @@ a {
 	color: white;
 	display:block;
 	text-decoration: none;
-	opacity: 90%;
+	opacity: 80%;
 }
 
 a:not(:hover) {
@@ -811,6 +811,11 @@ input[type=submit] {
 	.floatright {
 		padding-right: 10px;
 		font-size: 28px;
+	}
+
+	.mobileoverflow{
+		width: 400px;
+		overflow-wrap: break-word;
 	}
 
 	.detail-grid {
