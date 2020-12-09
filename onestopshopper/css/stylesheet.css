@@ -86,17 +86,17 @@ a:not(:hover) {
 }
 
 .subtext {
-	font-weight: bold;
+	font-weight: 300;
 	font-size: 30px;
 	position: relative;
-	bottom: 14px;
+	bottom: 10px;
 }
 
 .description {
 	position: relative;
 	bottom: 10px;
 	font-size: 24px;
-	text-align: left;
+	text-align: center;
 
 }
 
@@ -166,8 +166,8 @@ input[type=submit] {
 .index-grid {
 
 	display: grid; 
-	grid-template-columns: 49% 49% 2%; 
-	grid-template-rows: 10% 30% 60%;
+	grid-template-columns: 49% 35% 16%; 
+	grid-template-rows: 10% 35% 55%;
 	justify-items: center;
 
 	/* this next section defines the areas */
@@ -405,7 +405,7 @@ input[type=submit] {
 	left: -20px;
 	top: -5px;
 	width: 101%;
-	height: 90px;
+	height: 70px;
 	z-index: 100;
 }
 
@@ -426,12 +426,20 @@ input[type=submit] {
 	float: left;
 	left: 30px;
 	bottom: 7px;
-	font-weight: 450;
+	font-weight: 600;
 	font-size: 45px; 
+	color: #365ABD;
 }
 
 .siteName a:hover {
 	cursor: pointer;
+}
+
+.navbar a.option {
+	font-weight: 700;
+	font-size: 22px;
+	color: #126bab;
+	justify-content: center;
 }
 
 /*Home, Menu, etc.*/
