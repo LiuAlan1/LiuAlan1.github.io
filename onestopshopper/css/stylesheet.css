@@ -373,15 +373,19 @@ input[type=submit] {
 }
 
 .saveconfirm {
-	font-size: 30px;
+	font-size: 22px;
 	position: relative;
 	top: 10px;
 }
 
 .savenotiflist {
-	width: 43.6%;
+	width: 46.3%;
 	position: relative;
 	left: -3px;
+}
+
+.hidedesktopbutton {
+	display: none;
 }
 
 .gridheader { 
@@ -649,6 +653,10 @@ input[type=submit] {
 		width: 89.85%;
 	}
 
+	.hidedesktopbutton {
+		display: inline-block;
+	}
+
 	.detailheader {
 		font-size: 60px;
 		padding-bottom: 0%;
@@ -898,9 +906,12 @@ input[type=submit] {
 		font-size: 30px;
 	}
 
-
 	.savenotiflist {
 		width: 89.85%;
+	}
+
+	.hidedesktopbutton {
+		display: inline-block;
 	}
 
 	.detailheader {
