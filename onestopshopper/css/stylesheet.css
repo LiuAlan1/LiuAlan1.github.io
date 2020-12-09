@@ -582,7 +582,7 @@ input[type=submit] {
 	}
 
 	.detail-grid {
-		width: 101%;
+		width: 101.5%;
 		display: grid; 
 		grid-template-columns: 50% 50%; 
 		grid-template-rows: auto;
@@ -667,6 +667,7 @@ input[type=submit] {
 	}
 
 	.productimage {
+		width: 101%;
 		text-align: center;
 		background: white;
 	}
@@ -681,7 +682,7 @@ input[type=submit] {
 	}
 
 	.navbar {
-		width: 100%;
+		width: 101%;
 		height: 85px;
 		position: absolute;
 		top: 0px;
@@ -839,7 +840,7 @@ input[type=submit] {
 	}
 
 	.detail-grid {
-		width: 101%;
+		width: 101.5%;
 		display: grid; 
 		grid-template-columns: 50% 50%; 
 		grid-template-rows: auto;
@@ -900,6 +901,7 @@ input[type=submit] {
 		display: block;
 		background-color: #555;
 		padding-bottom: 1%
+		width: 101%;
 	}
 	
 	.price {
@@ -923,6 +925,7 @@ input[type=submit] {
 	}
 
 	.productimage {
+		width: 101%;
 		text-align: center;
 		background: white;
 	}
