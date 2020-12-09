@@ -73,7 +73,6 @@ function getZipCodeInt() {
     return parseInt(localStorage.getItem("validZip"));  
 }
 
-
 function saveCategory1(i) {
     localStorage.setItem("selCategory1", i);  
 }

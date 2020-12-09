@@ -71,7 +71,7 @@ a:not(:hover) {
 
 .coverimage {
 	position: relative;
-	bottom: 15px;
+	bottom: 40px;
 }
 
 .zipcode {
@@ -376,7 +376,12 @@ input[type=submit] {
 	font-size: 30px;
 	position: relative;
 	top: 10px;
+}
 
+.savenotiflist {
+	width: 93.85%;
+	position: relative;
+	left: -3px;
 }
 
 .gridheader { 
@@ -632,11 +637,16 @@ input[type=submit] {
 
 	.discmobile {
 		display: block;
+		background-color: #555;
 		padding-bottom: 1%
 	}
 
 	.price {
 		font-size: 30px;
+	}
+
+	.savenotiflist {
+		width: 89.85%;
 	}
 
 	.detailheader {
@@ -753,7 +763,7 @@ input[type=submit] {
 		grid-template-areas: 
 		". item3 ."
 		". item2 ."
-		". item1 ."
+		"item1 item1 item1"
 	}
 
 	.category-grid {
@@ -880,18 +890,22 @@ input[type=submit] {
 
 	.discmobile {
 		display: block;
+		background-color: #555;
 		padding-bottom: 1%
 	}
-
 	
 	.price {
 		font-size: 30px;
 	}
 
+
+	.savenotiflist {
+		width: 89.85%;
+	}
+
 	.detailheader {
 		font-size: 50px;
 	}
-
 
 	.storeheader {
 		display: none;
@@ -903,7 +917,7 @@ input[type=submit] {
 	}
 
 	.gridheader { 
-		font-size: 60px;
+		font-size: 55px;
 		position: relative;
 	}
 
