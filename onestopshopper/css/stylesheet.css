@@ -118,7 +118,7 @@ input[type=text] {
 }
 
 input[type=submit] {
-	background-color: #3348FF;
+	background-color: #126bab;
 	color: white;
 	padding: 14px 20px;
 	margin: 8px 0;
@@ -776,6 +776,7 @@ input[type=submit] {
 	}
 
 	.category-grid {
+		width: 101%;
 		grid-template-columns: 50% 50%; 
 		/* this next section defines the areas */
 		grid-template-areas: 
@@ -801,7 +802,7 @@ input[type=submit] {
 	}
 
 	.list-grid {
-		width: 101%;
+		width: 102.25%;
 		font-size: 40px;
 		grid-template-columns: 50% 50%; 
 		/* this next section defines the areas */
@@ -842,7 +843,7 @@ input[type=submit] {
 	.detail-grid {
 		width: 101.5%;
 		display: grid; 
-		grid-template-columns: 50% 50%; 
+		grid-template-columns: 50% 51%; 
 		grid-template-rows: auto;
 		align-items: center;
 
@@ -901,7 +902,7 @@ input[type=submit] {
 		display: block;
 		background-color: #555;
 		padding-bottom: 1%
-		width: 101%;
+		width: 102%;
 	}
 	
 	.price {
@@ -936,7 +937,7 @@ input[type=submit] {
 	}
 
 	.navbar {
-		width: 100%;
+		width: 101.5%;
 		height: 57px;
 		position: absolute;
 		top: 0px;
