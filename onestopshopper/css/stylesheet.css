@@ -83,6 +83,7 @@ a:not(:hover) {
 .header {
 	font-weight: bold;
 	font-size: 48px;
+	color: #126bab;
 }
 
 .subtext {
@@ -90,6 +91,7 @@ a:not(:hover) {
 	font-size: 30px;
 	position: relative;
 	bottom: 10px;
+	color: #00A9E0;
 }
 
 .description {
@@ -167,7 +169,7 @@ input[type=submit] {
 
 	display: grid; 
 	grid-template-columns: 9% 40% 2% 40% 9%; 
-	grid-template-rows: 10% 35% 55%;
+	grid-template-rows: 10% 32% 57%;
 	justify-items: center;
 
 	/* this next section defines the areas */
@@ -500,6 +502,11 @@ input[type=submit] {
 
 	}
 
+	.coverimage {
+		width: 1000px;
+		height: auto;
+	}
+
 	input[type=text] {
 		font-size: 50px;
 	}
@@ -510,7 +517,7 @@ input[type=submit] {
 
 	.index-grid {
 		grid-template-columns: 5% 91% 4%; 
-		grid-template-rows: 28% 15% 57%; 
+		grid-template-rows: 25% 13% 62%; 
 
 		grid-template-areas: 
 		". item3 ."
@@ -544,7 +551,7 @@ input[type=submit] {
 	}
 
 	.list-grid {
-		font-size: 40px;
+		font-size: 34px;
 		grid-template-columns: 50% 50%; 
 		/* this next section defines the areas */
 		grid-template-areas: 
@@ -754,7 +761,11 @@ input[type=submit] {
 		position: relative;
 		font-size: 32px;
 		text-align: left;
+	}
 
+	.coverimage {
+		width: 1000px;
+		height: auto;
 	}
 
 	input[type=text] {
@@ -767,7 +778,7 @@ input[type=submit] {
 
 	.index-grid {
 		grid-template-columns: 5% 91% 4%; 
-		grid-template-rows: 28% 15% 57%; 
+		grid-template-rows: 25% 15% 60%; 
 
 		grid-template-areas: 
 		". item3 ."
@@ -803,7 +814,7 @@ input[type=submit] {
 
 	.list-grid {
 		width: 102.25%;
-		font-size: 40px;
+		font-size: 34px;
 		grid-template-columns: 50% 50%; 
 		/* this next section defines the areas */
 		grid-template-areas: 
@@ -971,7 +982,7 @@ input[type=submit] {
 
 	.navbar.responsive {
 		position: absolute;
-		height: 330px;
+		height: 340px;
 	}
 	.navbar.responsive.icon {
 		position: absolute;
