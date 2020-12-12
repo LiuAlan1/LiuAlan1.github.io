@@ -321,7 +321,7 @@ input[type=submit] {
 }
 
 .iconresize img{
-	padding-right: 1%;
+	border: 1px solid grey;
 	width: auto;
 	height: 128px;
 }
