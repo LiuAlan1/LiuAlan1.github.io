@@ -528,6 +528,7 @@ input[type=submit] {
 	}
 
 	.category-grid {
+		width: 103%;
 		grid-template-columns: 50% 50%; 
 		/* this next section defines the areas */
 		grid-template-areas: 
@@ -616,7 +617,7 @@ input[type=submit] {
 	}
 
 	.list-save-content {
-		width: 101.5%;
+		width: 100%;
 	}
 
 	.iconresize img{
@@ -678,6 +679,11 @@ input[type=submit] {
 
 	.storeheader {
 		display: none;
+	}
+
+
+	.savelist-grid {
+		width: 100%;
 	}
 
 	.productimage {
@@ -795,7 +801,7 @@ input[type=submit] {
 	}
 
 	.category-grid {
-		width: 101%;
+		width: 103%;
 		grid-template-columns: 50% 50%; 
 		/* this next section defines the areas */
 		grid-template-areas: 
@@ -884,7 +890,7 @@ input[type=submit] {
 	}
 
 	.list-save-content {
-		width: 101.5%;
+		width: 100%;
 	}
 
 	.iconresize img{
