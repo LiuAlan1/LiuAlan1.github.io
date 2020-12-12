@@ -321,7 +321,6 @@ input[type=submit] {
 }
 
 .iconresize img{
-	padding: 0.25%;
 	padding-right: 1%;
 	width: auto;
 	height: 128px;
@@ -613,6 +612,10 @@ input[type=submit] {
 		"list1 list2 list3 list4 list5 list6"
 	}
 
+	.list-save-content {
+		width: 101.5%;
+	}
+
 	.iconresize img{
 		width: auto;
 		height: 128px;
@@ -874,6 +877,10 @@ input[type=submit] {
 		grid-template-columns: 13% 35% 13% 13% 13% 13%; 
 		grid-template-areas: 
 		"list1 list2 list3 list4 list5 list6"
+	}
+
+	.list-save-content {
+		width: 101.5%;
 	}
 
 	.iconresize img{
