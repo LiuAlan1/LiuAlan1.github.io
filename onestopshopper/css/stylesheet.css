@@ -593,7 +593,7 @@ input[type=submit] {
 	.detail-grid {
 		width: 101.5%;
 		display: grid; 
-		grid-template-columns: 50% 50%; 
+		grid-template-columns: 50.75% 50.75%; 
 		grid-template-rows: auto;
 		align-items: center;
 
@@ -862,7 +862,7 @@ input[type=submit] {
 	.detail-grid {
 		width: 101.5%;
 		display: grid; 
-		grid-template-columns: 50% 50%; 
+		grid-template-columns: 50.75% 50.75%; 
 		grid-template-rows: auto;
 
 		/* this next section defines the areas */
