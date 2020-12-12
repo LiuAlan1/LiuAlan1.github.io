@@ -262,7 +262,7 @@ input[type=submit] {
 }
 
 .detail-grid {
-
+	width: 100%;
 	display: grid; 
 	grid-template-columns: 20% 30% 30% 20%; 
 	/*
@@ -593,7 +593,7 @@ input[type=submit] {
 	.detail-grid {
 		width: 101.5%;
 		display: grid; 
-		grid-template-columns: 50.75% 50.75%; 
+		grid-template-columns: 50% 50%; 
 		grid-template-rows: auto;
 		align-items: center;
 
@@ -653,6 +653,7 @@ input[type=submit] {
 	}
 
 	.discmobile {
+		width: 101.5%;
 		display: block;
 		background-color: #555;
 		padding-bottom: 1%
@@ -860,7 +861,7 @@ input[type=submit] {
 	.detail-grid {
 		width: 101.5%;
 		display: grid; 
-		grid-template-columns: 51.25% 51.25%; 
+		grid-template-columns: 50% 50%; 
 		grid-template-rows: auto;
 
 		/* this next section defines the areas */
@@ -919,6 +920,7 @@ input[type=submit] {
 	}
 
 	.discmobile {
+		width: 101.5%;
 		display: block;
 		background-color: #555;
 		padding-bottom: 1%
