@@ -681,7 +681,7 @@ input[type=submit] {
 	}
 
 	.productimage {
-		width: 101%;
+		width: 101.5%;
 		text-align: center;
 		background: white;
 	}
@@ -726,6 +726,7 @@ input[type=submit] {
 	.navbar.responsive {
 		position: absolute;
 		height: 670px;
+		border-bottom: 1px solid black;
 	}
 	.navbar.responsive.icon {
 		position: absolute;
@@ -948,7 +949,7 @@ input[type=submit] {
 	}
 
 	.productimage {
-		width: 101%;
+		width: 101.5%;
 		text-align: center;
 		background: white;
 	}
@@ -992,6 +993,7 @@ input[type=submit] {
 @media screen and (max-width: 1367px) and (orientation: landscape) {
 
 	.navbar.responsive {
+		border-bottom: 1px solid black;
 		position: absolute;
 		height: 340px;
 	}
