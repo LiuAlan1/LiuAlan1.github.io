@@ -721,7 +721,7 @@ input[type=submit] {
 	}
 }
 
-@media screen and (max-width: 1025px) and (orientation: portrait) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
 
 	.navbar.responsive {
 		position: absolute;
@@ -746,7 +746,7 @@ input[type=submit] {
 	}
 }
 
-@media screen and (max-width: 1025px) and (orientation: landscape) {
+@media screen and (max-width: 1024px) and (orientation: landscape) {
 
 	.disable-scroll {
 		overflow: scroll;
@@ -990,7 +990,7 @@ input[type=submit] {
 }
 
 
-@media screen and (max-width: 1025px) and (orientation: landscape) {
+@media screen and (max-width: 1024px) and (orientation: landscape) {
 
 	.navbar.responsive {
 		border-bottom: 1px solid black;
@@ -1025,7 +1025,7 @@ input[type=submit] {
 	}
 }
 
-@media screen and (max-width: 1366px) and (orientation: landscape) {
+@media screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
 
 
 	.index-grid {
