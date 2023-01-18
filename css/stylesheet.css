@@ -23,7 +23,7 @@ a {
 	color: white;
 	display:inline-block;
 	text-decoration: none;
-	opacity: 80%;
+	opacity: 50%;
 }
 
 a:not(:hover) {
@@ -69,7 +69,7 @@ a:not(:hover) {
 
 	/* this next section defines the areas */
 	grid-template-areas: 
-	"header header header header header"
+	". header header header ."
 	". item1 item2 item3 ."
 	". item4 item5 item6 ."
 }
